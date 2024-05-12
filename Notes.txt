@@ -1,0 +1,77 @@
+-Changes to translation-
+
+Changed "heart" to "sexuality"
+Changed "diamond" to "romance"
+Changed "clubs" to "flirtation"
+Changed "spade" to "talent"
+
+Changed "money" and "cash" to "hunie"
+Changed "chip" to "affection"
+Changed "mult" to "passion"
+Changed "blind" to "date"
+
+Changed "Jimbo" to "Kyu"
+Changed "handsome Devil" to "hot bitty"
+Changed "balatro" to "hunatro"
+Changed "Too bad these chips are all virtual..." to "Too bad these girls are all virtual"
+
+Changed "Small Blind" to "First Date"
+Changed "Big Blind" to "Second Date"
+
+Changed "Joker" to "Kyu"
+
+Changed "Constellation" to "Nymphojinn"
+Changed "Canio" to "The Dream"
+Changed "Triboulet" to "A History"
+Changed "Yorick" to "An Agreement"
+Changed "Chicot" to "Not Blood"
+Changed "Perkeo" to "Just Good Business"
+Changed "Hologram" to "Incompatible"
+
+Changed "Arrowhead" to "Note"
+Changed "Hiker" to "Spiral Scout"
+Changed "Spare Trousers" to "Spare Panties"
+Changed "Bootstraps" to "Stripper Heels"
+Changed "Lucky Cat" to "Chibi Figurine"
+
+Changed "Baseball Card" to "Headshot"
+Changed "Faceless Joker" to "Screenshot"
+Changed "Photograph" to "Promo Pic"
+Changed "Vampire" to "Goth"
+
+Changed "Satellite" to "Moxie"
+Changed "Supernova" to "Jewn"
+
+Changed "Jolly Joker" to "Sarah"
+Changed "Zany Joker" to "Lillian"
+Changed "Mad Joker" to "Lailani"
+Changed "Crazy Joker" to "Candace"
+Changed "Droll Joker" to "Zoey"
+
+Changed "Sly Joker" to "Abia"
+Changed "Wily Joker" to "Polly"
+Changed "Clever Joker" to "Ashley"
+Changed "Devious Joker" to "Nora"
+Changed "Crafty Joker" to "Brooke"
+
+Changed "The Duo" to "Jessie"
+Changed "The Trio" to "Lola"
+
+Changed "Juggler" to "Fairy Magic"
+Changed "Drunkard" to "Sexy Puzzle Skills"
+
+-To Do-
+
+Changed "The Tribe" to "Ashley"
+Changed "The Family" to "Kyanna"
+Changed "The Order" to "Beli"
+
+Changed "Crafty Joker" to "Nikki"
+Changed "Crafty Joker" to "Tiffany"
+Changed "Crafty Joker" to "Aiko"
+
+Changed "Crafty Joker" to "Venus"
+Changed "Lucky Cat" to "Momo" <--- Replace Chibi Figurine
+Changed "Rocket" to "Celeste"
+
+Changed "Square Joker" to "Profile Pic" <-- Nikki?
