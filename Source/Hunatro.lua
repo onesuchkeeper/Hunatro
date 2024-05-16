@@ -22,6 +22,7 @@ function SMODS.INIT.Hunietro()
 	local sprite_ui_2 = SMODS.Sprite:new('ui_2', Hunietro.path, 'ui_assets.png', 18, 18, "asset_atli")
 	local sprite_Balatro = SMODS.Sprite:new('balatro', Hunietro.path, 'balatro.png', 333, 216, "asset_atli")
 	local sprite_enhancers = SMODS.Sprite:new('centers', Hunietro.path, 'Enhancers.png', 71, 95, 'asset_atli')
+	local sprite_tarot = SMODS.Sprite:new('Tarot', Hunietro.path, 'Tarots.png', 71, 95, 'asset_atli')
 
     sprite_jkr:register()
     sprite_cards_1:register()
@@ -32,6 +33,7 @@ function SMODS.INIT.Hunietro()
 	sprite_ui_2:register()
 	sprite_Balatro:register()
 	sprite_enhancers:register()
+	sprite_tarot:register()
 	
 	--colors
 	G.C.SUITS.Hearts = HEX('e24b3b')
