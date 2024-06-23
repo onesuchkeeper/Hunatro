@@ -8,7 +8,7 @@
                 }
             },
             j_jolly = {
-                name = "Sarah",
+                name = "Sarah Charm",
                 text = {
                     "{C:red}+#1#{} Passion if played",
                     "hand contains",
@@ -16,7 +16,7 @@
                 }
             },
             j_zany = {
-                name = "Lillian",
+                name = "Lillian Charm",
                 text = {
                     "{C:red}+#1#{} Passion if played",
                     "hand contains",
@@ -24,7 +24,7 @@
                 }
             },
             j_mad = {
-                name = "Lailani",
+                name = "Lailani Charm",
                 text = {
                     "{C:red}+#1#{} Passion if played",
                     "hand contains",
@@ -32,7 +32,7 @@
                 }
             },
             j_crazy = {
-                name = "Candace",
+                name = "Candace Charm",
                 text = {
                     "{C:red}+#1#{} Passion if played",
                     "hand contains",
@@ -40,7 +40,7 @@
                 }
             },
             j_droll = {
-                name = "Zoey",
+                name = "Zoey Charm",
                 text = {
                     "{C:red}+#1#{} Passion if played",
                     "hand contains",
@@ -48,7 +48,7 @@
                 }
             },
             j_sly = {
-                name = "Abia",
+                name = "Abia Charm",
                 text = {
                     "{C:chips}+#1#{} Affection if played",
                     "hand contains",
@@ -56,7 +56,7 @@
                 }
             },
             j_wily = {
-                name = "Polly",
+                name = "Polly Charm",
                 text = {
                     "{C:chips}+#1#{} Affection if played",
                     "hand contains",
@@ -64,7 +64,7 @@
                 }
             },
             j_clever = {
-                name = "Ashley",
+                name = "Ashley Charm",
                 text = {
                     "{C:chips}+#1#{} Affection if played",
                     "hand contains",
@@ -72,7 +72,7 @@
                 }
             },
             j_devious = {
-                name = "Nora",
+                name = "Nora Charm",
                 text = {
                     "{C:chips}+#1#{} Affection if played",
                     "hand contains",
@@ -80,7 +80,7 @@
                 }
             },
             j_crafty = {
-                name = "Brooke",
+                name = "Brooke Charm",
                 text = {
                     "{C:chips}+#1#{} Affection if played",
                     "hand contains",
@@ -165,7 +165,7 @@
                 }
             },
             j_greedy_joker = {
-                name = "Greedy Joker",
+                name = "Tender Joker",
                 text = {
                     "Played cards with",
                     "{C:diamonds}#2#{} suit give",
@@ -181,7 +181,7 @@
                 }
             },
             j_wrathful_joker = {
-                name = "Wrathful Joker",
+                name = "Impressive Joker",
                 text = {
                     "Played cards with",
                     "{C:spades}#2#{} suit give",
@@ -189,7 +189,7 @@
                 }
             },
             j_gluttenous_joker = {
-                name = "Gluttonous Joker",
+                name = "Fun Joker",
                 text = {
                     "Played cards with",
                     "{C:clubs}#2#{} suit give",
@@ -197,7 +197,7 @@
                 }
             },
             j_ceremonial = {
-                name = "Ceremonial Dagger",
+                name = "Audrey Charm",
                 text = {
                     "When a {C:attention}Date{} is selected,",
                     "destroy Joker to the right",
@@ -223,7 +223,7 @@
                 }
             },
             j_marble = {
-                name = "Marble Joker",
+                name = "Doujin Page",
                 text = {
                     "Adds one {C:attention}Stone{} card",
                     "to deck when",
@@ -326,7 +326,7 @@
                 }
             },
             j_hack = {
-                name = "Hack",
+                name = "Dancer",
                 text = {
                     "Retrigger",
                     "each played",
@@ -361,7 +361,7 @@
                 }
             },
             j_scholar = {
-                name = "Scholar",
+                name = "Aiko Charm",
                 text = {
                     "Played {C:attention}Aces{}",
                     "give {C:chips}+#2#{} Affection",
@@ -378,7 +378,7 @@
                 }
             },
             j_supernova = {
-                name = "Jewn",
+                name = "Jewn Charm",
                 text = {
                     "Adds the number of times",
                     "{C:attention}poker hand{} has been",
@@ -421,7 +421,7 @@
                 }
             },
             j_burglar = {
-                name = "Burglar",
+                name = "Tag",
                 text = {
                     "When a {C:attention}Date{} is selected,",
                     "gain {C:blue}+#1#{} Hands and",
@@ -437,7 +437,7 @@
                 }
             },
             j_runner = {
-                name = "Runner",
+                name = "Gym Flyer",
                 text = {
                     "Gains {C:chips}+#2#{} Affection",
                     "if played hand",
@@ -548,7 +548,7 @@
                 }
             },
             j_acrobat = {
-                name = "Acrobat",
+                name = "Magazine",
                 text = {
                     "{X:red,C:white} X#1# {} Passion on {C:attention}final",
                     "{C:attention}hand{} of round"
@@ -593,7 +593,7 @@
                 }
             },
             j_troubadour = {
-                name = "Troubadour",
+                name = "Crazy Real",
                 text = {
                     "{C:attention}+#1#{} hand size,",
                     "{C:blue}-#2#{} hand each round"
@@ -633,7 +633,7 @@
                 }
             },
             j_throwback = {
-                name = "Throwback",
+                name = "Tiffany Charm",
                 text = {
                     "{X:mult,C:white} X#1# {} Passion for each",
                     "{C:attention}Date{} skipped this run",
@@ -684,7 +684,7 @@
                 }
             },
             j_arrowhead = {
-                name = "Note",
+                name = "Note Carving",
                 text = {
                     "Played cards with",
                     "{C:spades}Talent{} suit give",
@@ -749,7 +749,7 @@
                 }
             },
             j_blueprint = {
-                name = "Blueprint",
+                name = "Nikki Charm",
                 text = {
                     "Copies ability of",
                     "{C:attention}Joker{} to the right"
@@ -772,7 +772,7 @@
                 }
             },
             j_merry_andy = {
-                name = "Merry Andy",
+                name = "Diary",
                 text = {
                     "{C:red}+#1#{} discards",
                     "each round,",
@@ -797,7 +797,7 @@
                 }
             },
             j_idol = {
-                name = "The Idol",
+                name = "Postcard",
                 text = {
                     "Each played {C:attention}#2#",
                     "of {V:1}#3#{} gives",
@@ -838,7 +838,7 @@
                 }
             },
             j_hit_the_road = {
-                name = "Hit the Road",
+                name = "Kyanna Charm",
                 text = {
                     "This Joker gains {X:mult,C:white} X#1# {} Passion",
                     "for every {C:attention}Jack{}",
@@ -852,7 +852,7 @@
                 }
             },
             j_duo = {
-                name = "Jessie",
+                name = "Nadia Charm",
                 text = {
                     "{X:mult,C:white} X#1# {} Passion if played",
                     "hand contains",
@@ -865,7 +865,7 @@
                 }
             },
             j_trio = {
-                name = "Lola",
+                name = "Renee Charm",
                 text = {
                     "{X:mult,C:white} X#1# {} Passion if played",
                     "hand contains",
@@ -878,7 +878,7 @@
                 }
             },
             j_family = {
-                name = "The Family",
+                name = "Marlena Charm",
                 text = {
                     "{X:mult,C:white} X#1# {} Passion if played",
                     "hand contains",
@@ -891,7 +891,7 @@
                 }
             },
             j_order = {
-                name = "The Order",
+                name = "Lola Charm",
                 text = {
                     "{X:mult,C:white} X#1# {} Passion if played",
                     "hand contains",
@@ -904,7 +904,7 @@
                 }
             },
             j_tribe = {
-                name = "The Tribe",
+                name = "Jessie Charm",
                 text = {
                     "{X:mult,C:white} X#1# {} Passion if played",
                     "hand contains",
@@ -943,7 +943,7 @@
                 }
             },
             j_madness = {
-                name = "Madness",
+                name = "Sext",
                 text = {
                     "When the {C:attention}First Date{} or {C:attention}Second Date{}",
                     "is selected, gain {X:mult,C:white} X#1# {} Passion",
@@ -952,7 +952,7 @@
                 }
             },
             j_square = {
-                name = "Square Joker",
+                name = "Profile Pic",
                 text = {
                     "This Joker gains {C:chips}+#2#{} Affection",
                     "if played hand has",
@@ -978,7 +978,7 @@
                 }
             },
             j_vampire = {
-                name = "Goth",
+                name = "Vanity",
                 text = {
                     "This Joker gains {X:mult,C:white} X#1# {} Passion",
                     "per scoring {C:attention}Enhanced card{} played,",
@@ -1030,7 +1030,7 @@
                 }
             },
             j_rocket = {
-                name = "Rocket",
+                name = "Celeste Charm",
                 text = {
                     "Earn {C:money}$#1#{} at end of round",
                     "Payout increases by {C:money}$#2#{}",
@@ -1056,7 +1056,7 @@
                 }
             },
             j_luchador = {
-                name = "Luchador",
+                name = "XXX Ad",
                 text = {
                     "Sell this card to",
                     "disable the current",
@@ -1064,7 +1064,7 @@
                 }
             },
             j_photograph = {
-                name = "Promo Pic",
+                name = "Poleroid",
                 text = {
                     "First played {C:attention}face",
                     "card gives {X:mult,C:white} X#1# {} Passion",
@@ -1081,7 +1081,7 @@
                 }
             },
             j_turtle_bean = {
-                name = "Turtle Bean",
+                name = "Beli Charm",
                 text = {
                     "{C:attention}+#1#{} hand size,",
                     "reduces by",
@@ -1133,7 +1133,7 @@
                 }
             },
             j_lucky_cat = {
-                name = "Chibi Figurine",
+                name = "Momo Charm",
                 text = {
                     "This Joker gains {X:mult,C:white} X#1# {} Passion",
                     "every time a {C:attention}Lucky{} card",
@@ -1149,7 +1149,7 @@
                 }
             },
             j_bull = {
-                name = "Bull",
+                name = "Report",
                 text = {
                     "{C:chips}+#1#{} Affection for",
                     "each {C:money}$1{} you have",
@@ -1206,7 +1206,7 @@
                 }
             },
             j_ancient= {
-                name = "Ancient Joker",
+                name = "Venus Charm",
                 text = {
                     "Each played card with",
                     "{V:1}#2#{} suit gives",
@@ -1259,7 +1259,7 @@
 
 
             j_stuntman = {
-                name = "Stuntman",
+                name = "Cigs",
                 text = {
                     "{C:chips}+#1#{} Affection,",
                     "{C:attention}-#2#{} hand size"
@@ -1296,7 +1296,7 @@
                 }
             },
             j_satellite = {
-                name = "Moxie",
+                name = "Moxie Charm",
                 text = {
                     "Earn {C:money}$#1#{} at end of",
                     "round per unique {C:planet}Planet",
@@ -2041,7 +2041,7 @@
                 }
             },
             c_planet_x = {
-                name = "Planet X",
+                name = "Tendricide",
                 text = {
                     "{S:0.8}({S:0.8,V:1}lvl.#1#{S:0.8}){} Level up",
                     "{C:attention}#2#",
@@ -2560,27 +2560,27 @@
                 text = {}
             },
             bl_hook = {
-                name = "The Hook",
+                name = "The Goth",
                 text = {
                     "Discards 2 random",
                     "cards per hand played"
                 }
             },
             bl_wall = {
-                name = "The Wall",
+                name = "The Hustle",
                 text = {
                     "Extra large affection requirment"
                 }
             },
             bl_wheel = {
-                name = "The Wheel",
+                name = "The Peppy",
                 text = {
                     " in 7 cards get",
                     "drawn face down"
                 }
             },
             bl_arm = {
-                name = "The Arm",
+                name = "The Weeb",
                 text = {
                     "Decrease level of",
                     "played poker hand"
@@ -2593,158 +2593,158 @@
                 }
             },
             bl_goad = {
-                name = "The Goad",
+                name = "The Dame",
                 text = {
                     "All Talent cards",
                     "are debuffed"
                 }
             },
             bl_water = {
-                name = "The Water",
+                name = "The Dork",
                 text = {
                     "Start with",
                     "0 discards"
                 }
             },
             bl_eye = {
-                name = "The Eye",
+                name = "The Stellar",
                 text = {
                     "No repeat hand",
                     "types this round"
                 }
             },
             bl_mouth = {
-                name = "The Mouth",
+                name = "The Devoted",
                 text = {
                     "Play only 1 hand",
                     "type this round"
                 }
             },
             bl_plant = {
-                name = "The Plant",
+                name = "The Obtuse",
                 text = {
                     "All face cards",
                     "are debuffed"
                 }
             },
             bl_needle = {
-                name = "The Needle",
+                name = "The Kitty",
                 text = {
                     "Play only 1 hand"
                 }
             },
             bl_head = {
-                name = "The Head",
+                name = "The Modest",
                 text = {
                     "All Sexuality cards",
                     "are debuffed"
                 }
             },
             bl_tooth = {
-                name = "The Tooth",
+                name = "The Cavillous",
                 text = {
                     "Lose $1 per",
                     "card played"
                 }
             },
             bl_final_leaf = {
-                name = "Verdant Leaf",
+                name = "The Devastating",
                 text = {
                     "All cards debuffed",
                     "until 1 Joker sold"
                 }
             },
             bl_final_vessel = {
-                name = "Violet Vessel",
+                name = "The Overstimulated",
                 text = {
                     "Very large affection requirment"
                 }
             },
             bl_ox = {
-                name = "The Ox",
+                name = "The Entrepreneur",
                 text = {
                     "Playing a #1#",
                     "sets hunie to $0"
                 }
             },
             bl_house = {
-                name = "The House",
+                name = "The Model",
                 text = {
                     "First hand is",
                     "drawn face down"
                 }
             },
             bl_club = {
-                name = "The Club",
+                name = "The Spiritual",
                 text = {
                     "All Flirtation cards",
                     "are debuffed"
                 }
             },
             bl_fish = {
-                name = "The Fish",
+                name = "The Washed",
                 text = {
                     "Cards drawn face down",
                     "after each hand played"
                 }
             },
             bl_window = {
-                name = "The Window",
+                name = "The Mega Bitch",
                 text = {
                     "All Romance cards",
                     "are debuffed"
                 }
             },
             bl_manacle = {
-                name = "The Manacle",
+                name = "The Longing",
                 text = {
                     "-1 Hand Size"
                 }
             },
             bl_serpent = {
-                name = "The Serpent",
+                name = "The Apathetic",
                 text = {
                     "After Play or Discard,",
                     "always draw 3 cards"
                 }
             },
             bl_pillar = {
-                name = "The Pillar",
+                name = "The Composed",
                 text = {
                     "Cards played previously",
                     "this Ante are debuffed"
                 }
             },
             bl_flint = {
-                name = "The Flint",
+                name = "The Aspirant",
                 text = {
                     "Base Affection and",
                     "Passion is halved"
                 }
             },
             bl_mark = {
-                name = "The Mark",
+                name = "The Dominant",
                 text = {
                     "All face cards are",
                     "drawn face down"
                 }
             },
             bl_final_acorn = {
-                name = "Amber Acorn",
+                name = "The Calamity",
                 text = {
                     "Flips and shuffles",
                     "all Joker cards"
                 }
             },
             bl_final_heart = {
-                name = "Crimson Heart",
+                name = "The Divine",
                 text = {
                     "One random Joker",
                     "disabled every hand"
                 }
             },
             bl_final_bell = {
-                name = "Cerulean Bell",
+                name = "The Mentor",
                 text = {
                     "Forces 1 card to",
                     "always be selected"
