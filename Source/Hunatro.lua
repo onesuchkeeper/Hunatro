@@ -2,7 +2,7 @@
 --- MOD_NAME: Hunatro
 --- MOD_ID: Hunatro
 --- MOD_AUTHOR: [OneSuchKeeper]
---- MOD_DESCRIPTION: A texture pack that changes textures, voice lines and dialogue to be Huniepop themed. Textures modified from textures in Huniecam Studio and Huniepop 2 are used with permission from the developer. Charms for Huniepop 1 characters are drawn by SilverwoodWorks. Development and all other textures are by OneSuchKeeper.
+--- MOD_DESCRIPTION: A resource pack that changes textures, voice lines and dialogue to be Huniepop themed. Textures modified from textures in Huniecam Studio and Huniepop 2 are used with permission from the developer. Charms for Huniepop 1 and Huniecam Studio characters are drawn by SilverwoodWorks. Development and all other textures are by OneSuchKeeper.
 --- BADGE_COLOUR: f2a7b7
 ----------------------------------------------
 ------------MOD CODE -------------------------
