@@ -6,9 +6,8 @@ Hunatro is developed for the <a href="https://github.com/Steamopollys/Steamodded
 
 However, it is just a resource pack. If you would like, you can alternativly unzip the Balatro.exe file and replace the texture and translation files within without the need for Steammodded.
 <h2>Credits</h2>
-Textures modified from textures in <a href="https://huniepop2doubledate.com/" target="_blank">Huniepop 2: Double Date</a> and <a href="https://huniecamstudio.com/" target="_blank">Huniecam Studio</a>.
-are used with permission from the developer. These texture are owned by <a href="https://huniepot.com/" target="_blank">Huniepot</a>.
+Textures modified from textures in <a href="https://huniepop2doubledate.com/" target="_blank">Huniepop 2: Double Date</a> and <a href="https://huniecamstudio.com/" target="_blank">Huniecam Studio</a> are used with permission from the developer. These textures are owned by <a href="https://huniepot.com/" target="_blank">Huniepot</a>.<br>
 
-Charms for Huniepop 1 and Huniecam Studio characters are by <a href="https://twitter.com/SilverwoodWork" target="_blank">SilverwoodWorks</a>
+Charms for Huniepop 1 and Huniecam Studio characters are by <a href="https://twitter.com/SilverwoodWork" target="_blank">SilverwoodWorks</a><br>
 
 Development and all other textures are by <a href="https://twitter.com/OneSuchKeeper" target="_blank">OneSuchKeeper</a>
