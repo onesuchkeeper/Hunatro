@@ -1,4 +1,4 @@
-<h1>Hunatro</h1>
+<img src="https://raw.githubusercontent.com/onesuchkeeper/Hunatro/main/Docs/Cover.png" alt="Hunatro">
 A resource pack that changes textures, voice lines and dialogue to be Huniepop themed.
 
 <h2>Installation</h2>
@@ -11,4 +11,4 @@ are used with permission from the developer. These texture are owned by <a href=
 
 Charms for Huniepop 1 and Huniecam Studio characters are by <a href="https://twitter.com/SilverwoodWork" target="_blank">SilverwoodWorks</a>
 
-Development and all other textures are by <a href="https://twitter.com/OneSuchKeeper" target="_blank">onesuchkeeper</a>
+Development and all other textures are by <a href="https://twitter.com/OneSuchKeeper" target="_blank">OneSuchKeeper</a>
