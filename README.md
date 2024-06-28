@@ -5,8 +5,6 @@
     </b>
 </p>
 
-<hr>
-
 <h2>Installation</h2>
 <p>
 	Hunatro is developed for the <a href="https://github.com/Steamopollys/Steamodded" target="_blank">Steamodded</a> mod loader. Once Steammodded is installed place the unzipped Hunatro folder in AppData/Roaming/Balatro/Mods. See Steamodded for futher installation guidance.
@@ -15,8 +13,6 @@
 <p>
 	However, it is just a resource pack. If you would like, you can alternativly unzip the Balatro.exe file and replace the texture and translation files within without the need for Steammodded.
 </p>
-
-<hr>
 
 <h2>Credits</h2>
 <p>
