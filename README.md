@@ -26,7 +26,3 @@
 <p>
 	Development and all other textures are by <a href="https://twitter.com/OneSuchKeeper" target="_blank">OneSuchKeeper</a>
 </p>
-
-<p>
-	Includes <a href="https://github.com/Infarcactus/Balatro-Custom-Sound-Player" target="_blank">Balatro-Custom-Sound-Player</a> by <a href="https://github.com/Infarcactus" target="_blank">Infarcactus</a>
-</p>

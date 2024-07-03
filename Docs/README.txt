@@ -20,5 +20,3 @@ Textures modified from textures in Huniepop 2: Double Date and Huniecam Studio a
 Charms for Huniepop 1 and Huniecam Studio characters are by SilverwoodWorks
 
 Development and all other textures are by OneSuchKeeper
-
-Includes Balatro-Custom-Sound-Player by Infarcactus
