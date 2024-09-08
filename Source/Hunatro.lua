@@ -6,159 +6,247 @@
 --- VERSION: 1.0.1
 --- LOADER_VERSION_GEQ: 1.0.0
 --- BADGE_COLOUR: f2a7b7
+--- DEPENDENCIES: [Steamodded>=1.0.0~ALPHA-0812d]
 ----------------------------------------------
 ------------MOD CODE -------------------------
 
-function SMODS.INIT.Hunatro()
-	sendDebugMessage("Hunatro")
-	G.F_NO_ACHIEVEMENTS = false
-	local Hunatro = SMODS.findModByID("Hunatro")
-	local Settings = NFS.load(Hunatro.path .. 'config.lua')()
+G.F_NO_ACHIEVEMENTS = false
+local Hunatro = SMODS.current_mod
+local Settings = NFS.load(Hunatro.path .. 'config.lua')()
 
-	--Textures/Colors
-	if Settings.Joker_Texture == 1 then
-		SMODS.Sprite:new("Joker", Hunatro.path, "Jokers.png", 71, 95, "asset_atli"):register()
-	end
+--icon
+SMODS.Atlas({
+	key = "modicon",
+	path = "icon.png",
+	px = 32,
+	py = 32
+}):register()
 
-	if Settings.Deck_Texture == 1 then
-		SMODS.Sprite:new('cards_1', Hunatro.path, '8BitDeck.png', 71, 95, 'asset_atli'):register()
-		SMODS.Sprite:new('cards_2', Hunatro.path, '8BitDeck_opt2.png', 71, 95, 'asset_atli'):register()
-	end
+--Collab Suits
+G.COLLABS.pos['2'] = {x=0,y=0}
+G.COLLABS.pos['3'] = {x=1,y=0}
+G.COLLABS.pos['4'] = {x=2,y=0}
+G.COLLABS.pos['5'] = {x=3,y=0}
+G.COLLABS.pos['6'] = {x=4,y=0}
+G.COLLABS.pos['7'] = {x=5,y=0}
+G.COLLABS.pos['8'] = {x=6,y=0}
+G.COLLABS.pos['9'] = {x=7,y=0}
+G.COLLABS.pos['10'] = {x=8,y=0}
+G.COLLABS.pos['Jack'] = {x=9,y=0}
+G.COLLABS.pos['Queen'] = {x=10,y=0}
+G.COLLABS.pos['King'] = {x=11,y=0}
+G.COLLABS.pos['Ace'] = {x=12,y=0}
 
-	if Settings.Voucher_Texture == 1 then
-		SMODS.Sprite:new('Voucher', Hunatro.path, 'Vouchers.png', 71, 95, 'asset_atli'):register()
-	end
+G.COLLABS.options.Hearts[#G.COLLABS.options.Hearts + 1] = "hunatro_sexuality"
+G.COLLABS.options.Clubs[#G.COLLABS.options.Clubs + 1] = "hunatro_flirtation"
+G.COLLABS.options.Diamonds[#G.COLLABS.options.Diamonds + 1] = "hunatro_romance"
+G.COLLABS.options.Spades[#G.COLLABS.options.Spades + 1] = "hunatro_talent"
 
-	if Settings.Voucher == 1 then
-		SMODS.Sprite:new('Voucher', Hunatro.path, 'Vouchers.png', 71, 95, 'asset_atli'):register()
-	end
+function SMODS.current_mod.process_loc_text()
+    G.localization.misc.collabs.Hearts['3'] = "Hunatro"
+	G.localization.misc.collabs.Spades['3'] = "Hunatro"
+	G.localization.misc.collabs.Diamonds['3'] = "Hunatro"
+	G.localization.misc.collabs.Clubs['3'] = "Hunatro"
+end
 
-	if Settings.Blind_Texture == 1 then
-		SMODS.Sprite:new('blind_chips', Hunatro.path, 'BlindChips.png', 34, 34, "animation_atli", 21):register()
-	end
+SMODS.Atlas{
+    key = "hunatro_sexuality_1",
+    path = "hunatro_sexuality_1.png",
+    px = 71,
+    py = 95,
+	atlas_table = 'ASSET_ATLAS',
+	raw_key = true,
+}
 
-	if Settings.Suit == 1 then
-		SMODS.Sprite:new('ui_1', Hunatro.path, 'ui_assets.png', 18, 18, "asset_atli"):register()
-		SMODS.Sprite:new('ui_2', Hunatro.path, 'ui_assets.png', 18, 18, "asset_atli"):register()
+SMODS.Atlas{
+    key = "hunatro_sexuality_2",
+    path = "hunatro_sexuality_2.png",
+    px = 71,
+    py = 95,
+	atlas_table = 'ASSET_ATLAS',
+	raw_key = true,
+}
 
-		G.C.SUITS.Hearts = HEX('e24b3b')
-		G.C.SUITS.Diamonds = HEX('e1893d')
-		G.C.SUITS.Spades = HEX("489cd7")
-		G.C.SUITS.Clubs = HEX('87b445')
-	end
+SMODS.Atlas{
+    key = "hunatro_flirtation_1",
+    path = "hunatro_flirtation_1.png",
+    px = 71,
+    py = 95,
+	atlas_table = 'ASSET_ATLAS',
+	raw_key = true,
+}
 
-	if Settings.Title == 1 then
-		SMODS.Sprite:new('balatro', Hunatro.path, 'balatro.png', 333, 216, "asset_atli"):register()
-	end
+SMODS.Atlas{
+    key = "hunatro_flirtation_2",
+    path = "hunatro_flirtation_2.png",
+    px = 71,
+    py = 95,
+	atlas_table = 'ASSET_ATLAS',
+	raw_key = true,
+}
 
+SMODS.Atlas{
+    key = "hunatro_romance_1",
+    path = "hunatro_romance_1.png",
+    px = 71,
+    py = 95,
+	atlas_table = 'ASSET_ATLAS',
+	raw_key = true,
+}
+
+SMODS.Atlas{
+    key = "hunatro_romance_2",
+    path = "hunatro_romance_2.png",
+    px = 71,
+    py = 95,
+	atlas_table = 'ASSET_ATLAS',
+	raw_key = true,
+}
+
+SMODS.Atlas{
+    key = "hunatro_talent_1",
+    path = "hunatro_talent_1.png",
+    px = 71,
+    py = 95,
+	atlas_table = 'ASSET_ATLAS',
+	raw_key = true,
+}
+
+SMODS.Atlas{
+    key = "hunatro_talent_2",
+    path = "hunatro_talent_2.png",
+    px = 71,
+    py = 95,
+	atlas_table = 'ASSET_ATLAS',
+	raw_key = true,
+}
+
+--other textures
+if Settings.Joker == 1 then
+	SMODS.Atlas{
+		key = 'Joker',
+		path = 'Jokers.png',
+		px = 71,
+		py = 95,
+		atlas_table = 'ASSET_ATLAS',
+		prefix_config = { key = false }
+	}
+end
+
+if Settings.Voucher == 1 then
+	SMODS.Atlas{
+		key = 'Voucher',
+		path = 'Vouchers.png',
+		px = 71,
+		py = 95,
+		atlas_table = 'ASSET_ATLAS',
+		prefix_config = { key = false }
+	}
+end
+
+if Settings.Blind == 1 then
+	SMODS.Atlas{
+		key = 'blind_chips',
+		path = 'BlindChips.png',
+		px = 34,
+		py = 34,
+		atlas_table = 'ANIMATION_ATLAS',
+		frames = 21,
+		prefix_config = { key = false }
+	}
+end
+
+if Settings.Suit == 1 then
+	SMODS.Atlas{
+		key = 'ui_1',
+		path = 'ui_assets.png',
+		px = 18,
+		py = 18,
+		atlas_table = 'ASSET_ATLAS',
+		prefix_config = { key = false }
+	}
+	SMODS.Atlas{
+		key = 'ui_2',
+		path = 'ui_assets.png',
+		px = 18,
+		py = 18,
+		atlas_table = 'ASSET_ATLAS',
+		prefix_config = { key = false }
+	}
+
+	G.C.SUITS.Hearts = HEX('e24b3b')
+	G.C.SUITS.Diamonds = HEX('e1893d')
+	G.C.SUITS.Spades = HEX("489cd7")
+	G.C.SUITS.Clubs = HEX('87b445')
+end
+
+if Settings.Title == 1 then
+	SMODS.Atlas{
+		key = 'balatro',
+		path = 'balatro.png',
+		px = 333,
+		py = 216,
+		atlas_table = 'ASSET_ATLAS',
+		prefix_config = { key = false }
+	}
+end
+
+if Settings.Tarot then
 	SMODS.Atlas {
-		key = "HunatroTarot",
+		key = "Tarot",
 		path = "Tarots.png",
 		px = 71,
 		py = 95,
-		raw_key = false
+		atlas_table = 'ASSET_ATLAS',
+		prefix_config = { key = false }
 	}
+end
 
-	if Settings.Tarot == 1 then
-		SMODS.Consumable:take_ownership('c_emperor', {
-			atlas = 'HunatroTarot'
-		})
+if Settings.Planet then
+	SMODS.Atlas {
+		key = "Planet",
+		path = "Tarots.png",
+		px = 71,
+		py = 95,
+		atlas_table = 'ASSET_ATLAS',
+		prefix_config = { key = false }
+	}
+end
 
-		SMODS.Consumable:take_ownership('c_lovers', {
-			atlas = 'HunatroTarot'
-		})
-	end
+if Settings.Spectral then
+	SMODS.Atlas {
+		key = "Spectral",
+		path = "Tarots.png",
+		px = 71,
+		py = 95,
+		atlas_table = 'ASSET_ATLAS',
+		prefix_config = { key = false }
+	}
+end
 
-	if Settings.Planet == 1 then
-		SMODS.Consumable:take_ownership('c_planet_x', {
-			atlas = 'HunatroTarot'
-		})
-	end
+--Soul, and seals aren't working
 
-	if Settings.Spectral == 1 then
-		SMODS.Consumable:take_ownership('c_soul', {
-			atlas = 'HunatroTarot'
-		})
+if Settings.Enhancer == 1 then
+	SMODS.Atlas {
+		key = "centers",
+		path = "Enhancers.png",
+		px = 71,
+		py = 95,
+		atlas_table = 'ASSET_ATLAS',
+		prefix_config = { key = false }
+	}
+end
 
-		--also needs ownership of the soul of soul hmmm
-	end
+--sounds
 
-	if Settings.Enhancer_Texture == 1 then
-		SMODS.Sprite:new('centers', Hunatro.path, 'Enhancers.png', 71, 95, 'asset_atli'):register()
-	end
-
-	--Sound
-
-	if Settings.Voice_Sound == 1 then
-		SMODS.Sound.replace_sounds["voice1"] = SMODS.Sound({
-			key = "voice1",
-			path = "voice1.ogg"
-		})
-		SMODS.Sound.replace_sounds["voice2"] = SMODS.Sound({
-			key = "voice2",
-			path = "voice2.ogg"
-		})
-		SMODS.Sound.replace_sounds["voice3"] = SMODS.Sound({
-			key = "voice3",
-			path = "voice3.ogg"
-		})
-		SMODS.Sound.replace_sounds["voice4"] = SMODS.Sound({
-			key = "voice4",
-			path = "voice4.ogg"
-		})
-		SMODS.Sound.replace_sounds["voice5"] = SMODS.Sound({
-			key = "voice5",
-			path = "voice5.ogg"
-		})
-		SMODS.Sound.replace_sounds["voice6"] = SMODS.Sound({
-			key = "voice6",
-			path = "voice6.ogg"
-		})
-		SMODS.Sound.replace_sounds["voice7"] = SMODS.Sound({
-			key = "voice7",
-			path = "voice7.ogg"
-		})
-		SMODS.Sound.replace_sounds["voice8"] = SMODS.Sound({
-			key = "voice8",
-			path = "voice8.ogg"
-		})
-		SMODS.Sound.replace_sounds["voice9"] = SMODS.Sound({
-			key = "voice9",
-			path = "voice9.ogg"
-		})
-		SMODS.Sound.replace_sounds["voice10"] = SMODS.Sound({
-			key = "voice10",
-			path = "voice10.ogg"
-		})
-		SMODS.Sound.replace_sounds["voice11"] = SMODS.Sound({
-			key = "voice11",
-			path = "voice1.ogg"
-		})
-	end
-
-	--icon
-	SMODS.Atlas({
-		key = "modicon",
-		path = "icon.png",
-		px = 32,
-		py = 32
-	}):register()
-
-	--Update localization
-	local lang_path = Hunietro.path .. 'localization/en-us.lua'
-	local function apply_patch()
-		if G.LANG.key == "en-us" and love.filesystem.exists(lang_path) then
-			G.localization = assert(loadstring(love.filesystem.read(lang_path)))()
-			init_localization()
-		end
-	end
-
-	apply_patch()
-
-	local set_language_ref = Game.set_language
-	function Game:set_language()
-		set_language_ref(self)
-		apply_patch()
+if Settings.Voice == 1 then
+	for i = 1, 11 do
+		SMODS.Sound {
+			key = "voice"..i,
+			path = "voice"..i..".ogg",
+			pitch = 0.0,
+			prefix_config = { key = false }
+		}
 	end
 end
 

@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../Steamodded/core"
+		},
+		{
+			"path": "../../Balatro"
+		}
+	],
+	"settings": {}
+}

@@ -1,0 +1,44 @@
+[manifest]
+version = "1.0.0"
+dump_lua = true
+priority = 100000000
+
+[[patches]]
+[patches.pattern]
+target = "card_character.lua"
+pattern =  "play_sound('voice'..math.random(1, 11), G.SPEEDFACTOR*(math.random()*0.2+1), 0.5)"
+position = "at"
+payload = "play_sound('voice'..math.random(1, 11), 1.0, 0.5)"
+match_indent = true
+
+[[patches]]
+[patches.pattern]
+target = "functions/misc_functions.lua"
+pattern = "if _front and _front.suit and (_front.value == 'Jack' or _front.value == 'Queen' or _front.value == 'King') then"
+position = "at"
+payload = "if _front and _front.suit then"
+match_indent = true
+
+[[patches]]
+[patches.pattern]
+target = "functions/UI_definitions.lua"
+pattern = "local faces = {'K','Q','J'}"
+position = "at"
+payload = "local faces = {'A','K','Q','J','T','9','8','7','6','5','4','3','2'}"
+match_indent = true
+
+[[patches]]
+[patches.pattern]
+target = "functions/UI_definitions.lua"
+pattern = "4*G.CARD_W,"
+position = "at"
+payload = "8*G.CARD_W,"
+match_indent = true
+
+[[patches]]
+[patches.pattern]
+target = "functions/UI_definitions.lua"
+pattern = "for i = 1, 3 do"
+position = "at"
+payload = "for i = 1, #faces do"
+match_indent = true
