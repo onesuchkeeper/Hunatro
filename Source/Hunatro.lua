@@ -297,6 +297,17 @@ if Settings.Spectral then
 		atlas_table = 'ASSET_ATLAS',
 		prefix_config = { key = false }
 	}
+	
+	SMODS.Atlas{
+		key = "centers",
+		path = "Enhancers.png",
+		px = 71,
+		py = 95,
+		inject = function(self)
+			SMODS.Atlas.inject(self)
+			G.shared_soul = Sprite(0, 0, G.CARD_W, G.CARD_H, self, {x = 0,y = 1})
+		end
+	}
 end
 
 --the soul texture isn't working, have to figure out how to add that
