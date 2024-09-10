@@ -26,6 +26,9 @@ return {
   -- Changes Enhancer textures
   Enhancer = 1,
   
+  -- Changes Seal textures
+  Seal = 1,
+  
   -- Changes 'Balatro' title logo to 'Hunatro'
   Title = 1,
   

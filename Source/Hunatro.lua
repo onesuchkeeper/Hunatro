@@ -23,19 +23,94 @@ SMODS.Atlas({
 }):register()
 
 --Collab Suits
-G.COLLABS.pos['2'] = {x=0,y=0}
-G.COLLABS.pos['3'] = {x=1,y=0}
-G.COLLABS.pos['4'] = {x=2,y=0}
-G.COLLABS.pos['5'] = {x=3,y=0}
-G.COLLABS.pos['6'] = {x=4,y=0}
-G.COLLABS.pos['7'] = {x=5,y=0}
-G.COLLABS.pos['8'] = {x=6,y=0}
-G.COLLABS.pos['9'] = {x=7,y=0}
-G.COLLABS.pos['10'] = {x=8,y=0}
-G.COLLABS.pos['Jack'] = {x=9,y=0}
-G.COLLABS.pos['Queen'] = {x=10,y=0}
-G.COLLABS.pos['King'] = {x=11,y=0}
-G.COLLABS.pos['Ace'] = {x=12,y=0}
+--G.COLLABS.pos['2'] = {x=0,y=0}
+--G.COLLABS.pos['3'] = {x=1,y=0}
+--G.COLLABS.pos['4'] = {x=2,y=0}
+--G.COLLABS.pos['5'] = {x=3,y=0}
+--G.COLLABS.pos['6'] = {x=4,y=0}
+--G.COLLABS.pos['7'] = {x=5,y=0}
+--G.COLLABS.pos['8'] = {x=6,y=0}
+--G.COLLABS.pos['9'] = {x=7,y=0}
+--G.COLLABS.pos['10'] = {x=8,y=0}
+--G.COLLABS.pos['Jack'] = {x=9,y=0}
+--G.COLLABS.pos['Queen'] = {x=10,y=0}
+--G.COLLABS.pos['King'] = {x=11,y=0}
+--G.COLLABS.pos['Ace'] = {x=12,y=0}
+
+--fix base Collabs
+SMODS.Atlas{
+	key = 'collab_AU_1',
+	path = 'collabs/collab_AU_1.png',
+	px = 71,
+	py = 95,
+	atlas_table = 'ASSET_ATLAS',
+	prefix_config = { key = false }
+}
+
+SMODS.Atlas{
+	key = 'collab_AU_2',
+	path = 'collabs/collab_AU_2.png',
+	px = 71,
+	py = 95,
+	atlas_table = 'ASSET_ATLAS',
+	prefix_config = { key = false }
+}
+
+SMODS.Atlas{
+	key = 'collab_DTD_1',
+	path = 'collabs/collab_DTD_1.png',
+	px = 71,
+	py = 95,
+	atlas_table = 'ASSET_ATLAS',
+	prefix_config = { key = false }
+}
+
+SMODS.Atlas{
+	key = 'collab_DTD_2',
+	path = 'collabs/collab_DTD_2.png',
+	px = 71,
+	py = 95,
+	atlas_table = 'ASSET_ATLAS',
+	prefix_config = { key = false }
+}
+
+SMODS.Atlas{
+	key = 'collab_VS_1',
+	path = 'collabs/collab_VS_1.png',
+	px = 71,
+	py = 95,
+	atlas_table = 'ASSET_ATLAS',
+	prefix_config = { key = false }
+}
+
+SMODS.Atlas{
+	key = 'collab_VS_2',
+	path = 'collabs/collab_VS_2.png',
+	px = 71,
+	py = 95,
+	atlas_table = 'ASSET_ATLAS',
+	prefix_config = { key = false }
+}
+
+SMODS.Atlas{
+	key = 'collab_TW_1',
+	path = 'collabs/collab_TW_1.png',
+	px = 71,
+	py = 95,
+	atlas_table = 'ASSET_ATLAS',
+	prefix_config = { key = false }
+}
+
+SMODS.Atlas{
+	key = 'collab_TW_2',
+	path = 'collabs/collab_TW_2.png',
+	px = 71,
+	py = 95,
+	atlas_table = 'ASSET_ATLAS',
+	prefix_config = { key = false }
+}
+
+--hunatro collabs
 
 G.COLLABS.options.Hearts[#G.COLLABS.options.Hearts + 1] = "hunatro_sexuality"
 G.COLLABS.options.Clubs[#G.COLLABS.options.Clubs + 1] = "hunatro_flirtation"
@@ -224,16 +299,34 @@ if Settings.Spectral then
 	}
 end
 
---Soul, and seals aren't working
+--the soul texture isn't working, have to figure out how to add that
 
 if Settings.Enhancer == 1 then
-	SMODS.Atlas {
+	SMODS.Atlas{
 		key = "centers",
 		path = "Enhancers.png",
 		px = 71,
 		py = 95,
 		atlas_table = 'ASSET_ATLAS',
 		prefix_config = { key = false }
+	}
+end
+
+if Settings.Seal == 1 then
+	SMODS.Atlas{
+		key = "centers",
+		path = "Enhancers.png",
+		px = 71,
+		py = 95,
+		inject = function(self)
+			SMODS.Atlas.inject(self)
+			G.shared_seals = {
+				Gold = Sprite(0, 0, G.CARD_W, G.CARD_H, self, {x = 2,y = 0}),
+				Purple = Sprite(0, 0, G.CARD_W, G.CARD_H, self, {x = 4,y = 4}),
+				Red = Sprite(0, 0, G.CARD_W, G.CARD_H, self, {x = 5,y = 4}),
+				Blue = Sprite(0, 0, G.CARD_W, G.CARD_H, self, {x = 6,y = 4}),
+			}
+		end
 	}
 end
 
