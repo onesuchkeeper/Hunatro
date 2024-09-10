@@ -299,7 +299,7 @@ if Settings.Spectral then
 	}
 	
 	SMODS.Atlas{
-		key = "centers",
+		key = "soul",
 		path = "Enhancers.png",
 		px = 71,
 		py = 95,
@@ -325,7 +325,7 @@ end
 
 if Settings.Seal == 1 then
 	SMODS.Atlas{
-		key = "centers",
+		key = "seals",
 		path = "Enhancers.png",
 		px = 71,
 		py = 95,
