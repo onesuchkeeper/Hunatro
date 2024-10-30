@@ -2,17 +2,22 @@
 --- MOD_NAME: Hunatro
 --- MOD_ID: Hunatro
 --- MOD_AUTHOR: [OneSuchKeeper]
---- MOD_DESCRIPTION: A resource pack that changes textures, voice lines and dialogue to be Huniepop themed. Textures modified from textures in Huniecam Studio and Huniepop 2 are used with permission from the developer. Charms for Huniepop 1 and Huniecam Studio characters are drawn by SilverwoodWorks. Development and all other textures are by OneSuchKeeper.
+--- MOD_DESCRIPTION: A resource pack that changes textures, voice lines and dialogue to be HuniePop themed.
 --- VERSION: 1.0.1
 --- LOADER_VERSION_GEQ: 1.0.0
 --- BADGE_COLOUR: f2a7b7
---- DEPENDENCIES: [Steamodded>=1.0.0~ALPHA-0812d]
+--- DEPENDENCIES: [Steamodded>=1.0.0~ALPHA-1030f]
+--- PRIORITY: 0
 ----------------------------------------------
 ------------MOD CODE -------------------------
+function debugMessage(message)
+	sendDebugMessage('[Hunatro] ' .. message)
+end
+
+debugMessage("Launching")
 
 G.F_NO_ACHIEVEMENTS = false
 local Hunatro = SMODS.current_mod
-local Settings = NFS.load(Hunatro.path .. 'config.lua')()
 
 --icon
 SMODS.Atlas({
@@ -20,135 +25,15 @@ SMODS.Atlas({
 	path = "icon.png",
 	px = 32,
 	py = 32
-}):register()
+})
 
---Collab Suits
---G.COLLABS.pos['2'] = {x=0,y=0}
---G.COLLABS.pos['3'] = {x=1,y=0}
---G.COLLABS.pos['4'] = {x=2,y=0}
---G.COLLABS.pos['5'] = {x=3,y=0}
---G.COLLABS.pos['6'] = {x=4,y=0}
---G.COLLABS.pos['7'] = {x=5,y=0}
---G.COLLABS.pos['8'] = {x=6,y=0}
---G.COLLABS.pos['9'] = {x=7,y=0}
---G.COLLABS.pos['10'] = {x=8,y=0}
---G.COLLABS.pos['Jack'] = {x=9,y=0}
---G.COLLABS.pos['Queen'] = {x=10,y=0}
---G.COLLABS.pos['King'] = {x=11,y=0}
---G.COLLABS.pos['Ace'] = {x=12,y=0}
-
---fix base Collabs
-SMODS.Atlas{
-	key = 'collab_AU_1',
-	path = 'collabs/collab_AU_1.png',
-	px = 71,
-	py = 95,
-	atlas_table = 'ASSET_ATLAS',
-	prefix_config = { key = false }
-}
-
-SMODS.Atlas{
-	key = 'collab_AU_2',
-	path = 'collabs/collab_AU_2.png',
-	px = 71,
-	py = 95,
-	atlas_table = 'ASSET_ATLAS',
-	prefix_config = { key = false }
-}
-
-SMODS.Atlas{
-	key = 'collab_DTD_1',
-	path = 'collabs/collab_DTD_1.png',
-	px = 71,
-	py = 95,
-	atlas_table = 'ASSET_ATLAS',
-	prefix_config = { key = false }
-}
-
-SMODS.Atlas{
-	key = 'collab_DTD_2',
-	path = 'collabs/collab_DTD_2.png',
-	px = 71,
-	py = 95,
-	atlas_table = 'ASSET_ATLAS',
-	prefix_config = { key = false }
-}
-
-SMODS.Atlas{
-	key = 'collab_VS_1',
-	path = 'collabs/collab_VS_1.png',
-	px = 71,
-	py = 95,
-	atlas_table = 'ASSET_ATLAS',
-	prefix_config = { key = false }
-}
-
-SMODS.Atlas{
-	key = 'collab_VS_2',
-	path = 'collabs/collab_VS_2.png',
-	px = 71,
-	py = 95,
-	atlas_table = 'ASSET_ATLAS',
-	prefix_config = { key = false }
-}
-
-SMODS.Atlas{
-	key = 'collab_TW_1',
-	path = 'collabs/collab_TW_1.png',
-	px = 71,
-	py = 95,
-	atlas_table = 'ASSET_ATLAS',
-	prefix_config = { key = false }
-}
-
-SMODS.Atlas{
-	key = 'collab_TW_2',
-	path = 'collabs/collab_TW_2.png',
-	px = 71,
-	py = 95,
-	atlas_table = 'ASSET_ATLAS',
-	prefix_config = { key = false }
-}
-
---hunatro collabs
-
-G.COLLABS.options.Hearts[#G.COLLABS.options.Hearts + 1] = "hunatro_sexuality"
-G.COLLABS.options.Clubs[#G.COLLABS.options.Clubs + 1] = "hunatro_flirtation"
-G.COLLABS.options.Diamonds[#G.COLLABS.options.Diamonds + 1] = "hunatro_romance"
-G.COLLABS.options.Spades[#G.COLLABS.options.Spades + 1] = "hunatro_talent"
-
-function SMODS.current_mod.process_loc_text()
-    G.localization.misc.collabs.Hearts['3'] = "Hunatro"
-	G.localization.misc.collabs.Spades['3'] = "Hunatro"
-	G.localization.misc.collabs.Diamonds['3'] = "Hunatro"
-	G.localization.misc.collabs.Clubs['3'] = "Hunatro"
-end
-
-SMODS.Atlas{
-    key = "hunatro_sexuality_1",
-    path = "hunatro_sexuality_1.png",
-    px = 71,
-    py = 95,
-	atlas_table = 'ASSET_ATLAS',
-	raw_key = true,
-}
-
-SMODS.Atlas{
-    key = "hunatro_sexuality_2",
-    path = "hunatro_sexuality_2.png",
-    px = 71,
-    py = 95,
-	atlas_table = 'ASSET_ATLAS',
-	raw_key = true,
-}
-
+--flirtation--
 SMODS.Atlas{
     key = "hunatro_flirtation_1",
     path = "hunatro_flirtation_1.png",
     px = 71,
     py = 95,
-	atlas_table = 'ASSET_ATLAS',
-	raw_key = true,
+	atlas_table = 'ASSET_ATLAS'
 }
 
 SMODS.Atlas{
@@ -156,17 +41,61 @@ SMODS.Atlas{
     path = "hunatro_flirtation_2.png",
     px = 71,
     py = 95,
-	atlas_table = 'ASSET_ATLAS',
-	raw_key = true,
+	atlas_table = 'ASSET_ATLAS'
 }
 
+SMODS.DeckSkin{
+	key = "hunatro_flirtation",
+	suit = 'Clubs',
+	ranks = {
+		'2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', "King", "Ace"
+	},
+	hc_atlas = "hunatro_flirtation_2",
+	lc_atlas = "hunatro_flirtation_1",
+	loc_txt = {
+		['en-us'] = 'HuniePop'
+	},
+	posStyle = 'suit'
+}
+
+--sexuality--
+SMODS.Atlas{
+    key = "hunatro_sexuality_1",
+    path = "hunatro_sexuality_1.png",
+    px = 71,
+    py = 95,
+	atlas_table = 'ASSET_ATLAS'
+}
+
+SMODS.Atlas{
+    key = "hunatro_sexuality_2",
+    path = "hunatro_sexuality_2.png",
+    px = 71,
+    py = 95,
+	atlas_table = 'ASSET_ATLAS'
+}
+
+SMODS.DeckSkin{
+	key = "hunatro_sexuality",
+	suit = 'Hearts',
+	ranks = {
+		'2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', "King", "Ace"
+	},
+	hc_atlas = "hunatro_sexuality_2",
+	lc_atlas = "hunatro_sexuality_1",
+	loc_txt = {
+		['en-us'] = 'HuniePop'
+	},
+	posStyle = 'suit'
+}
+
+--romance--
 SMODS.Atlas{
     key = "hunatro_romance_1",
     path = "hunatro_romance_1.png",
     px = 71,
     py = 95,
-	atlas_table = 'ASSET_ATLAS',
-	raw_key = true,
+	atlas_table = 'ASSET_ATLAS'
 }
 
 SMODS.Atlas{
@@ -174,17 +103,30 @@ SMODS.Atlas{
     path = "hunatro_romance_2.png",
     px = 71,
     py = 95,
-	atlas_table = 'ASSET_ATLAS',
-	raw_key = true,
+	atlas_table = 'ASSET_ATLAS'
 }
 
+SMODS.DeckSkin{
+	key = "hunatro_romance",
+	suit = 'Diamonds',
+	ranks = {
+		'2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', "King", "Ace"
+	},
+	hc_atlas = "hunatro_romance_2",
+	lc_atlas = "hunatro_romance_1",
+	loc_txt = {
+		['en-us'] = 'HuniePop'
+	},
+	posStyle = 'suit'
+}
+
+--talent--
 SMODS.Atlas{
     key = "hunatro_talent_1",
     path = "hunatro_talent_1.png",
     px = 71,
     py = 95,
-	atlas_table = 'ASSET_ATLAS',
-	raw_key = true,
+	atlas_table = 'ASSET_ATLAS'
 }
 
 SMODS.Atlas{
@@ -192,12 +134,40 @@ SMODS.Atlas{
     path = "hunatro_talent_2.png",
     px = 71,
     py = 95,
-	atlas_table = 'ASSET_ATLAS',
-	raw_key = true,
+	atlas_table = 'ASSET_ATLAS'
 }
 
+SMODS.DeckSkin{
+	key = "hunatro_talent",
+	suit = 'Spades',
+	ranks = {
+		'2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', "King", "Ace"
+	},
+	hc_atlas = "hunatro_talent_2",
+	lc_atlas = "hunatro_talent_1",
+	loc_txt = {
+		['en-us'] = 'HuniePop'
+	},
+	posStyle = 'suit'
+}
+
+if Hunatro.config.hunatro_config_joker == nil then
+	Hunatro.config.hunatro_config_joker = true
+	Hunatro.config.hunatro_config_blind = true
+	Hunatro.config.hunatro_config_suit = true
+	Hunatro.config.hunatro_config_voucher = true
+	Hunatro.config.hunatro_config_tarot = true
+	Hunatro.config.hunatro_config_planet = true
+	Hunatro.config.hunatro_config_spectral = true
+	Hunatro.config.hunatro_config_enhancer = true
+	Hunatro.config.hunatro_config_seal = true
+	Hunatro.config.hunatro_config_title = true
+	Hunatro.config.hunatro_config_voice = true
+	SMODS.save_mod_config(Hunatro)
+end
+
 --other textures
-if Settings.Joker == 1 then
+if Hunatro.config.hunatro_config_joker then
 	SMODS.Atlas{
 		key = 'Joker',
 		path = 'Jokers.png',
@@ -206,9 +176,11 @@ if Settings.Joker == 1 then
 		atlas_table = 'ASSET_ATLAS',
 		prefix_config = { key = false }
 	}
+	
+	G.P_CENTERS['j_constellation'].soul_pos = {x=1, y=9}
 end
 
-if Settings.Voucher == 1 then
+if Hunatro.config.hunatro_config_voucher then
 	SMODS.Atlas{
 		key = 'Voucher',
 		path = 'Vouchers.png',
@@ -219,7 +191,7 @@ if Settings.Voucher == 1 then
 	}
 end
 
-if Settings.Blind == 1 then
+if Hunatro.config.hunatro_config_blind then
 	SMODS.Atlas{
 		key = 'blind_chips',
 		path = 'BlindChips.png',
@@ -231,7 +203,7 @@ if Settings.Blind == 1 then
 	}
 end
 
-if Settings.Suit == 1 then
+if Hunatro.config.hunatro_config_suit then
 	SMODS.Atlas{
 		key = 'ui_1',
 		path = 'ui_assets.png',
@@ -255,7 +227,7 @@ if Settings.Suit == 1 then
 	G.C.SUITS.Clubs = HEX('87b445')
 end
 
-if Settings.Title == 1 then
+if Hunatro.config.hunatro_config_title then
 	SMODS.Atlas{
 		key = 'balatro',
 		path = 'balatro.png',
@@ -266,8 +238,8 @@ if Settings.Title == 1 then
 	}
 end
 
-if Settings.Tarot then
-	SMODS.Atlas {
+if Hunatro.config.hunatro_config_tarot then
+	SMODS.Atlas{
 		key = "Tarot",
 		path = "Tarots.png",
 		px = 71,
@@ -277,8 +249,8 @@ if Settings.Tarot then
 	}
 end
 
-if Settings.Planet then
-	SMODS.Atlas {
+if Hunatro.config.hunatro_config_planet then
+	SMODS.Atlas{
 		key = "Planet",
 		path = "Tarots.png",
 		px = 71,
@@ -288,8 +260,8 @@ if Settings.Planet then
 	}
 end
 
-if Settings.Spectral then
-	SMODS.Atlas {
+if Hunatro.config.hunatro_config_spectral then
+	SMODS.Atlas{
 		key = "Spectral",
 		path = "Tarots.png",
 		px = 71,
@@ -310,9 +282,7 @@ if Settings.Spectral then
 	}
 end
 
---the soul texture isn't working, have to figure out how to add that
-
-if Settings.Enhancer == 1 then
+if Hunatro.config.hunatro_config_enhancer then
 	SMODS.Atlas{
 		key = "centers",
 		path = "Enhancers.png",
@@ -323,7 +293,7 @@ if Settings.Enhancer == 1 then
 	}
 end
 
-if Settings.Seal == 1 then
+if Hunatro.config.hunatro_config_seal then
 	SMODS.Atlas{
 		key = "seals",
 		path = "Enhancers.png",
@@ -343,7 +313,7 @@ end
 
 --sounds
 
-if Settings.Voice == 1 then
+if Hunatro.config.hunatro_config_voice then
 	for i = 1, 11 do
 		SMODS.Sound {
 			key = "voice"..i,
@@ -352,6 +322,163 @@ if Settings.Voice == 1 then
 			prefix_config = { key = false }
 		}
 	end
+end
+
+-------------------
+--- Config Tab  ---
+-------------------
+local toggleOptions = {
+	'hunatro_config_joker',
+	'hunatro_config_blind',
+	'hunatro_config_suit',
+	'hunatro_config_voucher',
+	'hunatro_config_tarot',
+	'hunatro_config_planet',
+	'hunatro_config_spectral',
+	'hunatro_config_enhancer',
+	'hunatro_config_seal',
+	'hunatro_config_title',
+	'hunatro_config_voice'
+}
+
+Hunatro.config_tab = function()
+	local configNodes = {}
+	
+	--make toggles
+	for i = 1, #toggleOptions do
+	
+		configNodes[i] = create_toggle({
+			label = localize(toggleOptions[i], 'hunatroConfig'),
+			ref_table = Hunatro.config,
+			ref_value = toggleOptions[i],
+			scale = 0.75,
+			label_scale = 0.3,
+			callback = function()
+				SMODS.save_mod_config(Hunatro)
+			end
+		})
+		
+		configNodes[i].config.padding = -0.05
+	end
+	
+	--make notice
+	local notice = localize('hunatro_config_warning','hunatroConfig')
+	
+	for i = 1, #notice do
+		configNodes[#toggleOptions + i] = {
+			n = G.UIT.R,
+			config = {
+				padding = 0.01
+			},
+			nodes = {
+				{ 
+					n = G.UIT.T,
+					config = { 
+						text = notice[i],
+						scale = 0.45,
+						colour = G.C.UI.TEXT_LIGHT,
+						shadow = true
+					}
+				}
+			}
+		}
+	end
+	
+	--make ui
+    return {
+		n = G.UIT.ROOT,
+		config = {
+			r = 0.1,
+			minw = 5,
+			align = "cm",
+			padding = 0.2,
+			colour = G.C.BLACK
+		},
+		nodes = configNodes
+	}
+end
+
+function G.FUNCS.hunatro_foo(e)
+	Hunatro.config.cycle = e.to_key
+	SMODS.save_mod_config(Hunatro)
+end
+
+-------------------
+--- Credits Tab ---
+-------------------
+Hunatro.credits_tab = function()
+
+	local title_scale = 0.9 * 0.6
+	local text_scale = 0.9 * 0.5
+	local notice_scale = 0.9 * 0.3
+	
+	return {
+		n = G.UIT.ROOT,
+		config = { align = "cm", padding = 0.2, colour = G.C.BLACK, r = 0.1, emboss = 0.05, minh = 6, minw = 10 },
+		nodes = {
+			{
+				n = G.UIT.R,
+				config = { align = "cm", padding = 0.1, outline_colour = G.C.JOKER_GREY, r = 0.1, outline = 1 },
+				nodes = {
+					{
+						n = G.UIT.R,
+						config = { align = "cm", padding = 0 },
+						nodes = {
+							{ n = G.UIT.T, config = { text = 'Programming', scale = title_scale, colour = G.C.GOLD, shadow = true } },
+						}
+					},
+					{
+						n = G.UIT.R,
+						config = { align = "cm", padding = 0 },
+						nodes = {
+							{ n = G.UIT.T, config = { text = 'OneSuchKeeper', scale = text_scale, colour = G.C.UI.TEXT_LIGHT, shadow = true } },
+						}
+					}
+				}
+			},
+			{
+				n = G.UIT.R,
+				config = { align = "cm", padding = 0.1, outline_colour = G.C.JOKER_GREY, r = 0.1, outline = 1 },
+				nodes = {
+					{
+						n = G.UIT.R,
+						config = { align = "cm", padding = 0 },
+						nodes = {
+							{ n = G.UIT.T, config = { text = 'Art', scale = title_scale, colour = G.C.RED, shadow = true } },
+						}
+					},
+					{
+						n = G.UIT.R,
+						config = { align = "cm", padding = 0 },
+						nodes = {
+							{ n = G.UIT.T, config = { text = 'Silverwoodworks', scale = text_scale, colour = G.C.UI.TEXT_LIGHT, shadow = true } },
+						}
+					},
+					{
+						n = G.UIT.R,
+						config = { align = "cm", padding = 0 },
+						nodes = {
+							{ n = G.UIT.T, config = { text = 'OneSuchKeeper', scale = text_scale, colour = G.C.UI.TEXT_LIGHT, shadow = true } },
+						}
+					},
+				}
+			},
+			{
+				n = G.UIT.R,
+				config = { align = "cm", padding = 0.1, outline_colour = G.C.TEXT_LIGHT, r = 0.1, outline = 0 },
+				nodes = {
+					{
+						n = G.UIT.T,
+						config = { 
+							text = '*Textures modified from textures in Huniecam Studio and\nHuniePop 2 are used with permission from the developer',
+							scale = notice_scale,
+							colour = G.C.UI.L_BLACK,
+							shadow = true }
+					}
+				}
+			}
+		}
+	}
 end
 
 ----------------------------------------------
