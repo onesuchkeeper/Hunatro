@@ -2682,7 +2682,7 @@
                 }
             },
             bl_fish = {
-                name = "The Washed",
+                name = "The Washed Up",
                 text = {
                     "Cards drawn face down",
                     "after each hand played"

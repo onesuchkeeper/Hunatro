@@ -3,10 +3,10 @@
 --- MOD_ID: Hunatro
 --- MOD_AUTHOR: [OneSuchKeeper]
 --- MOD_DESCRIPTION: A resource pack that changes textures, voice lines and dialogue to be HuniePop themed.
---- VERSION: 1.0.1
+--- VERSION: 1.0.2
 --- LOADER_VERSION_GEQ: 1.0.0
 --- BADGE_COLOUR: f2a7b7
---- DEPENDENCIES: [Steamodded>=1.0.0~ALPHA-1030f]
+--- DEPENDENCIES: [Steamodded>=1.0.0~ALPHA-1404g]
 --- PRIORITY: 0
 ----------------------------------------------
 ------------MOD CODE -------------------------
@@ -27,44 +27,14 @@ SMODS.Atlas({
 	py = 32
 })
 
---flirtation--
-SMODS.Atlas{
-    key = "hunatro_flirtation_1",
-    path = "hunatro_flirtation_1.png",
-    px = 71,
-    py = 95,
-	atlas_table = 'ASSET_ATLAS'
-}
-
-SMODS.Atlas{
-    key = "hunatro_flirtation_2",
-    path = "hunatro_flirtation_2.png",
-    px = 71,
-    py = 95,
-	atlas_table = 'ASSET_ATLAS'
-}
-
-SMODS.DeckSkin{
-	key = "hunatro_flirtation",
-	suit = 'Clubs',
-	ranks = {
-		'2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', "King", "Ace"
-	},
-	hc_atlas = "hunatro_flirtation_2",
-	lc_atlas = "hunatro_flirtation_1",
-	loc_txt = {
-		['en-us'] = 'HuniePop'
-	},
-	posStyle = 'suit'
-}
-
---sexuality--
+--hearts--
 SMODS.Atlas{
     key = "hunatro_sexuality_1",
     path = "hunatro_sexuality_1.png",
     px = 71,
     py = 95,
-	atlas_table = 'ASSET_ATLAS'
+	atlas_table = 'ASSET_ATLAS',
+	prefix_config = { key = false }
 }
 
 SMODS.Atlas{
@@ -72,30 +42,225 @@ SMODS.Atlas{
     path = "hunatro_sexuality_2.png",
     px = 71,
     py = 95,
-	atlas_table = 'ASSET_ATLAS'
+	atlas_table = 'ASSET_ATLAS',
+	prefix_config = { key = false }
+}
+
+SMODS.Atlas{
+    key = "hunatro_sexuality_3",
+    path = "hunatro_sexuality_3.png",
+    px = 71,
+    py = 95,
+	atlas_table = 'ASSET_ATLAS',
+	prefix_config = { key = false }
+}
+
+SMODS.Atlas{
+    key = "hunatro_sexuality_4",
+    path = "hunatro_sexuality_4.png",
+    px = 71,
+    py = 95,
+	atlas_table = 'ASSET_ATLAS',
+	prefix_config = { key = false }
+}
+
+SMODS.Atlas{
+    key = "hunatro_sexuality_5",
+    path = "hunatro_sexuality_5.png",
+    px = 71,
+    py = 95,
+	atlas_table = 'ASSET_ATLAS',
+	prefix_config = { key = false }
+}
+
+SMODS.Atlas{
+    key = "hunatro_sexuality_6",
+    path = "hunatro_sexuality_6.png",
+    px = 71,
+    py = 95,
+	atlas_table = 'ASSET_ATLAS',
+	prefix_config = { key = false }
 }
 
 SMODS.DeckSkin{
 	key = "hunatro_sexuality",
 	suit = 'Hearts',
-	ranks = {
-		'2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', "King", "Ace"
+	palettes = {
+		{
+			key = '1',
+			ranks = {'2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', "King", "Ace"},
+			display_ranks = {"Ace", 'King', 'Queen', 'Jack' , '10', '9', '8'},
+			atlas = 'hunatro_sexuality_1',
+			posStyle = 'suit',
+			colour = HEX('e24b3b')
+		},
+		{
+			key = '2',
+			ranks = {'2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', "King", "Ace"},
+			display_ranks = {"Ace", 'King', 'Queen', 'Jack' , '10', '9', '8'},
+			atlas = 'hunatro_sexuality_6',
+			posStyle = 'suit',
+			colour = HEX('e24b3b')
+		},
+		{
+			key = '3',
+			ranks = {'2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', "King", "Ace"},
+			display_ranks = {"Ace", 'King', 'Queen', 'Jack' , '10', '9', '8'},
+			atlas = 'hunatro_sexuality_3',
+			posStyle = 'suit',
+			colour = HEX('e24b3b')
+		},
+		{
+			key = '4',
+			ranks = {'2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', "King", "Ace"},
+			display_ranks = {"Ace", 'King', 'Queen', 'Jack' , '10', '9', '8'},
+			atlas = 'hunatro_sexuality_4',
+			posStyle = 'suit',
+			colour = HEX('e24b3b')
+		},
+		{
+			key = '5',
+			ranks = {'2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', "King", "Ace"},
+			display_ranks = {"Ace", 'King', 'Queen', 'Jack' , '10', '9', '8'},
+			atlas = 'hunatro_sexuality_5',
+			posStyle = 'suit',
+			colour = HEX('e24b3b')
+		},
+		{
+			key = '6',
+			ranks = {'2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', "King", "Ace"},
+			display_ranks = {"Ace", 'King', 'Queen', 'Jack' , '10', '9', '8'},
+			atlas = 'hunatro_sexuality_2',
+			posStyle = 'suit',
+			colour = HEX('e24b3b')
+		}
 	},
-	hc_atlas = "hunatro_sexuality_2",
-	lc_atlas = "hunatro_sexuality_1",
 	loc_txt = {
-		['en-us'] = 'HuniePop'
-	},
-	posStyle = 'suit'
+		['en-us'] = 'Huniepop'
+	}
 }
 
---romance--
+--clubs--
+SMODS.Atlas{
+    key = "hunatro_flirtation_1",
+    path = "hunatro_flirtation_1.png",
+    px = 71,
+    py = 95,
+	atlas_table = 'ASSET_ATLAS',
+	prefix_config = { key = false }
+}
+
+SMODS.Atlas{
+    key = "hunatro_flirtation_2",
+    path = "hunatro_flirtation_2.png",
+    px = 71,
+    py = 95,
+	atlas_table = 'ASSET_ATLAS',
+	prefix_config = { key = false }
+}
+
+SMODS.Atlas{
+    key = "hunatro_flirtation_3",
+    path = "hunatro_flirtation_3.png",
+    px = 71,
+    py = 95,
+	atlas_table = 'ASSET_ATLAS',
+	prefix_config = { key = false }
+}
+
+SMODS.Atlas{
+    key = "hunatro_flirtation_4",
+    path = "hunatro_flirtation_4.png",
+    px = 71,
+    py = 95,
+	atlas_table = 'ASSET_ATLAS',
+	prefix_config = { key = false }
+}
+
+SMODS.Atlas{
+    key = "hunatro_flirtation_5",
+    path = "hunatro_flirtation_5.png",
+    px = 71,
+    py = 95,
+	atlas_table = 'ASSET_ATLAS',
+	prefix_config = { key = false }
+}
+
+SMODS.Atlas{
+    key = "hunatro_flirtation_6",
+    path = "hunatro_flirtation_6.png",
+    px = 71,
+    py = 95,
+	atlas_table = 'ASSET_ATLAS',
+	prefix_config = { key = false }
+}
+
+SMODS.DeckSkin{
+	key = "hunatro_flirtation",
+	suit = 'Clubs',
+	palettes = {
+		{
+			key = '1',
+			ranks = {'2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', "King", "Ace"},
+			display_ranks = {"Ace", 'King', 'Queen', 'Jack' , '10', '9', '8'},
+			atlas = 'hunatro_flirtation_1',
+			posStyle = 'suit',
+			colour = HEX('87b445')
+		},
+		{
+			key = '2',
+			ranks = {'2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', "King", "Ace"},
+			display_ranks = {"Ace", 'King', 'Queen', 'Jack' , '10', '9', '8'},
+			atlas = 'hunatro_flirtation_6',
+			posStyle = 'suit',
+			colour = HEX('87b445')
+		},
+		{
+			key = '3',
+			ranks = {'2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', "King", "Ace"},
+			display_ranks = {"Ace", 'King', 'Queen', 'Jack' , '10', '9', '8'},
+			atlas = 'hunatro_flirtation_3',
+			posStyle = 'suit',
+			colour = HEX('87b445')
+		},
+		{
+			key = '4',
+			ranks = {'2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', "King", "Ace"},
+			display_ranks = {"Ace", 'King', 'Queen', 'Jack' , '10', '9', '8'},
+			atlas = 'hunatro_flirtation_4',
+			posStyle = 'suit',
+			colour = HEX('87b445')
+		},
+		{
+			key = '5',
+			ranks = {'2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', "King", "Ace"},
+			display_ranks = {"Ace", 'King', 'Queen', 'Jack' , '10', '9', '8'},
+			atlas = 'hunatro_flirtation_5',
+			posStyle = 'suit',
+			colour = HEX('87b445')
+		},
+		{
+			key = '6',
+			ranks = {'2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', "King", "Ace"},
+			display_ranks = {"Ace", 'King', 'Queen', 'Jack' , '10', '9', '8'},
+			atlas = 'hunatro_flirtation_2',
+			posStyle = 'suit',
+			colour = HEX('87b445')
+		}
+	},
+	loc_txt = {
+		['en-us'] = 'Huniepop'
+	}
+}
+
+--diamonds--
 SMODS.Atlas{
     key = "hunatro_romance_1",
     path = "hunatro_romance_1.png",
     px = 71,
     py = 95,
-	atlas_table = 'ASSET_ATLAS'
+	atlas_table = 'ASSET_ATLAS',
+	prefix_config = { key = false }
 }
 
 SMODS.Atlas{
@@ -103,30 +268,112 @@ SMODS.Atlas{
     path = "hunatro_romance_2.png",
     px = 71,
     py = 95,
-	atlas_table = 'ASSET_ATLAS'
+	atlas_table = 'ASSET_ATLAS',
+	prefix_config = { key = false }
+}
+
+SMODS.Atlas{
+    key = "hunatro_romance_3",
+    path = "hunatro_romance_3.png",
+    px = 71,
+    py = 95,
+	atlas_table = 'ASSET_ATLAS',
+	prefix_config = { key = false }
+}
+
+SMODS.Atlas{
+    key = "hunatro_romance_4",
+    path = "hunatro_romance_4.png",
+    px = 71,
+    py = 95,
+	atlas_table = 'ASSET_ATLAS',
+	prefix_config = { key = false }
+}
+
+SMODS.Atlas{
+    key = "hunatro_romance_5",
+    path = "hunatro_romance_5.png",
+    px = 71,
+    py = 95,
+	atlas_table = 'ASSET_ATLAS',
+	prefix_config = { key = false }
+}
+
+SMODS.Atlas{
+    key = "hunatro_romance_6",
+    path = "hunatro_romance_6.png",
+    px = 71,
+    py = 95,
+	atlas_table = 'ASSET_ATLAS',
+	prefix_config = { key = false }
 }
 
 SMODS.DeckSkin{
 	key = "hunatro_romance",
 	suit = 'Diamonds',
-	ranks = {
-		'2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', "King", "Ace"
+	palettes = {
+		{
+			key = '1',
+			ranks = {'2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', "King", "Ace"},
+			display_ranks = {"Ace", 'King', 'Queen', 'Jack' , '10', '9', '8'},
+			atlas = 'hunatro_romance_1',
+			posStyle = 'suit',
+			colour = HEX('e1893d')
+		},
+		{
+			key = '2',
+			ranks = {'2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', "King", "Ace"},
+			display_ranks = {"Ace", 'King', 'Queen', 'Jack' , '10', '9', '8'},
+			atlas = 'hunatro_romance_6',
+			posStyle = 'suit',
+			colour = HEX('e1893d')
+		},
+		{
+			key = '3',
+			ranks = {'2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', "King", "Ace"},
+			display_ranks = {"Ace", 'King', 'Queen', 'Jack' , '10', '9', '8'},
+			atlas = 'hunatro_romance_3',
+			posStyle = 'suit',
+			colour = HEX('e1893d')
+		},
+		{
+			key = '4',
+			ranks = {'2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', "King", "Ace"},
+			display_ranks = {"Ace", 'King', 'Queen', 'Jack' , '10', '9', '8'},
+			atlas = 'hunatro_romance_4',
+			posStyle = 'suit',
+			colour = HEX('e1893d')
+		},
+		{
+			key = '5',
+			ranks = {'2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', "King", "Ace"},
+			display_ranks = {"Ace", 'King', 'Queen', 'Jack' , '10', '9', '8'},
+			atlas = 'hunatro_romance_5',
+			posStyle = 'suit',
+			colour = HEX('e1893d')
+		},
+		{
+			key = '6',
+			ranks = {'2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', "King", "Ace"},
+			display_ranks = {"Ace", 'King', 'Queen', 'Jack' , '10', '9', '8'},
+			atlas = 'hunatro_romance_2',
+			posStyle = 'suit',
+			colour = HEX('e1893d')
+		}
 	},
-	hc_atlas = "hunatro_romance_2",
-	lc_atlas = "hunatro_romance_1",
 	loc_txt = {
-		['en-us'] = 'HuniePop'
-	},
-	posStyle = 'suit'
+		['en-us'] = 'Huniepop'
+	}
 }
 
---talent--
+--spades--
 SMODS.Atlas{
     key = "hunatro_talent_1",
     path = "hunatro_talent_1.png",
     px = 71,
     py = 95,
-	atlas_table = 'ASSET_ATLAS'
+	atlas_table = 'ASSET_ATLAS',
+	prefix_config = { key = false }
 }
 
 SMODS.Atlas{
@@ -134,21 +381,102 @@ SMODS.Atlas{
     path = "hunatro_talent_2.png",
     px = 71,
     py = 95,
-	atlas_table = 'ASSET_ATLAS'
+	atlas_table = 'ASSET_ATLAS',
+	prefix_config = { key = false }
+}
+
+SMODS.Atlas{
+    key = "hunatro_talent_3",
+    path = "hunatro_talent_3.png",
+    px = 71,
+    py = 95,
+	atlas_table = 'ASSET_ATLAS',
+	prefix_config = { key = false }
+}
+
+SMODS.Atlas{
+    key = "hunatro_talent_4",
+    path = "hunatro_talent_4.png",
+    px = 71,
+    py = 95,
+	atlas_table = 'ASSET_ATLAS',
+	prefix_config = { key = false }
+}
+
+SMODS.Atlas{
+    key = "hunatro_talent_5",
+    path = "hunatro_talent_5.png",
+    px = 71,
+    py = 95,
+	atlas_table = 'ASSET_ATLAS',
+	prefix_config = { key = false }
+}
+
+SMODS.Atlas{
+    key = "hunatro_talent_6",
+    path = "hunatro_talent_6.png",
+    px = 71,
+    py = 95,
+	atlas_table = 'ASSET_ATLAS',
+	prefix_config = { key = false }
 }
 
 SMODS.DeckSkin{
 	key = "hunatro_talent",
 	suit = 'Spades',
-	ranks = {
-		'2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', "King", "Ace"
+	palettes = {
+		{
+			key = '1',
+			ranks = {'2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', "King", "Ace"},
+			display_ranks = {"Ace", 'King', 'Queen', 'Jack' , '10', '9', '8'},
+			atlas = 'hunatro_talent_1',
+			posStyle = 'suit',
+			colour = HEX("489cd7")
+		},
+		{
+			key = '2',
+			ranks = {'2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', "King", "Ace"},
+			display_ranks = {"Ace", 'King', 'Queen', 'Jack' , '10', '9', '8'},
+			atlas = 'hunatro_talent_6',
+			posStyle = 'suit',
+			colour = HEX("489cd7")
+		},
+		{
+			key = '3',
+			ranks = {'2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', "King", "Ace"},
+			display_ranks = {"Ace", 'King', 'Queen', 'Jack' , '10', '9', '8'},
+			atlas = 'hunatro_talent_3',
+			posStyle = 'suit',
+			colour = HEX("489cd7")
+		},
+		{
+			key = '4',
+			ranks = {'2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', "King", "Ace"},
+			display_ranks = {"Ace", 'King', 'Queen', 'Jack' , '10', '9', '8'},
+			atlas = 'hunatro_talent_4',
+			posStyle = 'suit',
+			colour = HEX("489cd7")
+		},
+		{
+			key = '5',
+			ranks = {'2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', "King", "Ace"},
+			display_ranks = {"Ace", 'King', 'Queen', 'Jack' , '10', '9', '8'},
+			atlas = 'hunatro_talent_5',
+			posStyle = 'suit',
+			colour = HEX("489cd7")
+		},
+		{
+			key = '6',
+			ranks = {'2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', "King", "Ace"},
+			display_ranks = {"Ace", 'King', 'Queen', 'Jack' , '10', '9', '8'},
+			atlas = 'hunatro_talent_2',
+			posStyle = 'suit',
+			colour = HEX("489cd7")
+		}
 	},
-	hc_atlas = "hunatro_talent_2",
-	lc_atlas = "hunatro_talent_1",
 	loc_txt = {
-		['en-us'] = 'HuniePop'
-	},
-	posStyle = 'suit'
+		['en-us'] = 'Huniepop'
+	}
 }
 
 if Hunatro.config.hunatro_config_joker == nil then
@@ -220,11 +548,6 @@ if Hunatro.config.hunatro_config_suit then
 		atlas_table = 'ASSET_ATLAS',
 		prefix_config = { key = false }
 	}
-
-	G.C.SUITS.Hearts = HEX('e24b3b')
-	G.C.SUITS.Diamonds = HEX('e1893d')
-	G.C.SUITS.Spades = HEX("489cd7")
-	G.C.SUITS.Clubs = HEX('87b445')
 end
 
 if Hunatro.config.hunatro_config_title then
