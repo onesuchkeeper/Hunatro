@@ -1,0 +1,678 @@
+﻿return {
+    descriptions = {
+        alt_texture = {
+			alt_tex_hunatro_jokers_basic = {
+                name = 'Jimbo, Suit, Mult, Chip and X Mult Jokers',
+            },
+            alt_tex_hunatro_jokers_legends = {
+                name = 'Legendary Jokers',
+            },
+            alt_tex_hunatro_jokers_other = {
+                name = 'Other Jokers',
+            },
+            alt_tex_hunatro_blind_chips = {
+                name = 'Blind Chips',
+            },
+            alt_tex_hunatro_decks = {
+                name = 'Decks',
+            },
+            alt_tex_hunatro_seals = {
+                name = 'Seals',
+            },
+            alt_tex_hunatro_vouchers = {
+                name = 'Glyph Vouchers',
+            },
+            alt_tex_hunatro_enhancements = {
+                name = 'Enhancements',
+            },
+            alt_tex_hunatro_tarots = {
+                name = 'Tarots',
+            },
+            alt_tex_hunatro_planets = {
+                name = 'Planets',
+            },
+            alt_tex_hunatro_spectrals = {
+                name = 'The Soul',
+            },
+		},
+		texture_packs = {
+			texpack_hunatro_hunatro = {
+                name = 'Hunatro',
+                text = {
+                    'Ya see, as a love fairy, it\'s my job', 
+                    'to help poor saps like you out with the jokers.',
+                    'It\'s just, what I do. You though...',
+                    'Let\'s just say, you will be my greatest accomplishment yet.'},
+                localization = {
+                    j_joker = {
+                        name = 'Kyu'
+                    },
+                    j_jolly = {
+                        name = 'Sarah Charm'
+                    },
+                    j_zany = {
+                        name = 'Lillian Charm'
+                    },
+                    j_mad = {
+                        name = 'Lailani Charm'
+                    },
+                    j_crazy = {
+                        name = 'Candace Charm'
+                    },
+                    j_droll = {
+                        name = 'Zoey Charm'
+                    },
+                    j_sly = {
+                        name = 'Abia Charm'
+                    },
+                    j_wily = {
+                        name = 'Polly Charm'
+                    },
+                    j_clever = {
+                        name = 'Ashley Charm'
+                    },
+                    j_devious = {
+                        name = 'Nora Charm'
+                    },
+                    j_crafty = {
+                        name = 'Brooke Charm'
+                    },
+                    j_juggler = {
+                        name = 'Fairy Magic'
+                    },
+                    j_drunkard = {
+                        name = 'Sexy Puzzle Skills'
+                    },
+                    j_greedy_joker = {
+                        name = 'Tender Joker'
+                    },
+                    j_wrathful_joker = {
+                        name = 'Impressive Joker'
+                    },
+                    j_gluttenous_joker = {
+                        name = 'Fun Joker'
+                    },
+                    j_ceremonial = {
+                        name = 'Audrey Charm'
+                    },
+                    j_marble = {
+                        name = 'Doujin Page'
+                    },
+                    j_hack = {
+                        name = 'Dancer'
+                    },
+                    j_scholar = {
+                        name = 'Aiko Charm'
+                    },
+                    j_supernova = {
+                        name = 'Jewn Charm'
+                    },
+                    j_space = {
+                        name = 'Interstellar Identification'
+                    },
+                    j_burglar = {
+                        name = 'Tag'
+                    },
+                    j_runner = {
+                        name = 'Gym Flyer'
+                    },
+                    j_constellation = {
+                        name = 'Nymphojinn'
+                    },
+                    j_hiker = {
+                        name = 'Spiral Scout'
+                    },
+                    j_faceless = {
+                        name = 'Screenshot'
+                    },
+                    j_acrobat = {
+                        name = 'Magazine'
+                    },
+                    j_troubadour = {
+                        name = 'Crazy Real'
+                    },
+                    j_throwback = {
+                        name = 'Tiffany Charm'
+                    },
+                    j_arrowhead = {
+                        name = 'Note Carving'
+                    },
+                    j_blueprint = {
+                        name = 'Nikki Charm'
+                    },
+                    j_merry_andy = {
+                        name = 'Diary'
+                    },
+                    j_idol = {
+                        name = 'Postcard'
+                    },
+                    j_hit_the_road = {
+                        name = 'Kyanna Charm'
+                    },
+                    j_duo = {
+                        name = 'Nadia Charm'
+                    },
+                    j_trio = {
+                        name = 'Renee Charm'
+                    },
+                    j_family = {
+                        name = 'Marlena Charm'
+                    },
+                    j_order = {
+                        name = 'Lola Charm'
+                    },
+                    j_tribe = {
+                        name = 'Jessie Charm'
+                    },
+                    j_madness = {
+                        name = 'Sext'
+                    },
+                    j_square = {
+                        name = 'Profile Pic'
+                    },
+                    j_vampire = {
+                        name = 'Vanity'
+                    },
+                    j_hologram = {
+                        name = 'Incompatible'
+                    },
+                    j_rocket = {
+                        name = 'Celeste Charm'
+                    },
+                    j_luchador = {
+                        name = 'XXX Ad'
+                    },
+                    j_photograph = {
+                        name = 'Poleroid'
+                    },
+                    j_turtle_bean = {
+                        name = 'Beli Charm'
+                    },
+                    j_lucky_cat = {
+                        name = 'Momo Charm'
+                    },
+                    j_baseball = {
+                        name = 'Headshot'
+                    },
+                    j_bull = {
+                        name = 'Report'
+                    },
+                    j_trousers = {
+                        name = 'Spare Panties'
+                    },
+                    j_ancient = {
+                        name = 'Venus Charm'
+                    },
+                    j_stuntman = {
+                        name = 'Cigs'
+                    },
+                    j_satellite = {
+                        name = 'Moxie Charm'
+                    },
+                    j_bootstraps = {
+                        name = 'Stripper Heels'
+                    },
+                    j_caino = {
+                        name = 'The Dream'
+                    },
+                    j_triboulet = {
+                        name = 'A History'
+                    },
+                    j_yorick = {
+                        name = 'An Agreement'
+                    },
+                    j_chicot = {
+                        name = 'Not Blood'
+                    },
+                    j_perkeo = {
+                        name = 'Just Good Business'
+                    },
+                    c_planet_x = {
+                        name = "Tendricide",
+                    },
+                    c_eris = {
+                        name = "Sky Garden",
+                    },
+                    -- bl_small = {
+                    --     name = "First Date",
+                    -- },
+                    -- bl_big = {
+                    --     name = "Second Date",
+                    -- },
+                    -- bl_hook = {
+                    --     name = "The Goth",
+                    -- },
+                    -- bl_wall = {
+                    --     name = "The Hustle",
+                    -- },
+                    -- bl_wheel = {
+                    --     name = "The Peppy",
+                    -- },
+                    -- bl_arm = {
+                    --     name = "The Weeb",
+                    -- },
+                    -- bl_psychic = {
+                    --     name = "The Wyrd",
+                    -- },
+                    -- bl_goad = {
+                    --     name = "The Dame",
+                    -- },
+                    -- bl_water = {
+                    --     name = "The Dork",
+                    -- },
+                    -- bl_eye = {
+                    --     name = "The Stellar",
+                    -- },
+                    -- bl_mouth = {
+                    --     name = "The Devoted",
+                    -- },
+                    -- bl_plant = {
+                    --     name = "The Obtuse",
+                    -- },
+                    -- bl_needle = {
+                    --     name = "The Kitty",
+                    -- },
+                    -- bl_head = {
+                    --     name = "The Modest",
+                    -- },
+                    -- bl_tooth = {
+                    --     name = "The Cavillous",
+                    -- },
+                    -- bl_final_leaf = {
+                    --     name = "The Devastating",
+                    -- },
+                    -- bl_final_vessel = {
+                    --     name = "The Overstimulated",
+                    -- },
+                    -- bl_ox = {
+                    --     name = "The Entrepreneur",
+                    -- },
+                    -- bl_house = {
+                    --     name = "The Model",
+                    -- },
+                    -- bl_club = {
+                    --     name = "The Spiritual",
+                    -- },
+                    -- bl_fish = {
+                    --     name = "The Washed Up",
+                    -- },
+                    -- bl_window = {
+                    --     name = "The Mega Bitch",
+                    -- },
+                    -- bl_manacle = {
+                    --     name = "The Longing",
+                    -- },
+                    -- bl_serpent = {
+                    --     name = "The Apathetic",
+                    -- },
+                    -- bl_pillar = {
+                    --     name = "The Composed",
+                    -- },
+                    -- bl_flint = {
+                    --     name = "The Aspirant",
+                    -- },
+                    -- bl_mark = {
+                    --     name = "The Dominant",
+                    -- },
+                    -- bl_final_acorn = {
+                    --     name = "The Calamity",
+                    -- },
+                    -- bl_final_heart = {
+                    --     name = "The Divine",
+                    -- },
+                    -- bl_final_bell = {
+                    --     name = "The Mentor",
+                    -- }
+                }
+			},
+		},
+        --these aren't handled by Malverk properly
+        Blind = {
+            bl_small = {
+                name = "First Date",
+            },
+            bl_big = {
+                name = "Second Date",
+            },
+            bl_hook = {
+                name = "The Goth",
+            },
+            bl_wall = {
+                name = "The Hustle",
+            },
+            bl_wheel = {
+                name = "The Peppy",
+            },
+            bl_arm = {
+                name = "The Weeb",
+            },
+            bl_psychic = {
+                name = "The Wyrd",
+            },
+            bl_goad = {
+                name = "The Dame",
+            },
+            bl_water = {
+                name = "The Dork",
+            },
+            bl_eye = {
+                name = "The Stellar",
+            },
+            bl_mouth = {
+                name = "The Devoted",
+            },
+            bl_plant = {
+                name = "The Obtuse",
+            },
+            bl_needle = {
+                name = "The Kitty",
+            },
+            bl_head = {
+                name = "The Modest",
+            },
+            bl_tooth = {
+                name = "The Cavillous",
+            },
+            bl_final_leaf = {
+                name = "The Devastating",
+            },
+            bl_final_vessel = {
+                name = "The Overstimulated",
+            },
+            bl_ox = {
+                name = "The Entrepreneur",
+            },
+            bl_house = {
+                name = "The Model",
+            },
+            bl_club = {
+                name = "The Spiritual",
+            },
+            bl_fish = {
+                name = "The Washed Up",
+            },
+            bl_window = {
+                name = "The Mega Bitch",
+            },
+            bl_manacle = {
+                name = "The Longing",
+            },
+            bl_serpent = {
+                name = "The Apathetic",
+            },
+            bl_pillar = {
+                name = "The Composed",
+            },
+            bl_flint = {
+                name = "The Aspirant",
+            },
+            bl_mark = {
+                name = "The Dominant",
+            },
+            bl_final_acorn = {
+                name = "The Calamity",
+            },
+            bl_final_heart = {
+                name = "The Divine",
+            },
+            bl_final_bell = {
+                name = "The Mentor",
+            }
+        }
+    },
+    misc = {
+        replaceSuits = {
+            {"diamonds","romance"},
+            {"Diamonds","Romance"},
+            {"diamond","romance"},
+            {"Diamond","Romance"},
+    
+            {"hearts","sexuality"},
+            {"Hearts","Sexuality"},
+            {"heart","sexuality"},
+            {"Heart","Sexuality"},
+    
+            {"spades","talent"},
+            {"Spades","Talent"},
+            {"spade","talent"},
+            {"Spade","Talent"},
+    
+            {"clubs","flirtation"},
+            {"Clubs","Flirtation"},
+            {"club","flirtation"},
+            {"Club","Flirtation"},
+        },
+
+        replaceResources = {
+            {"money","hunie"},
+            {"Money","Hunie"},
+    
+            {"small blind","first date"},
+            {"Small Blind","First Date"},
+    
+            {"big blind","second date"},
+            {"Big Blind","Second Date"},
+    
+            {"blind","date"},
+            {"Blind","Date"},
+    
+            {"chips","affection"},
+            {"Chips","Affection"},
+            {"chip","affection"},
+            {"Chip","Affection"},
+    
+            {"mult","passion"},
+            {"Mult","Passion"},
+        },
+        quips = {
+            wq_1 = {"Good work!", "Let's bring it in for today!"},
+            wq_2 = {"Keep doing what","you're doing!","Make Mama Sugardust", "proud!"},
+            wq_3 = {"Well look at you!", "Looks like I've created a monster..."},
+            wq_4 = {"Too bad these","girls are all","virtual..."},
+            wq_5 = {"Alright you're getting good!","just don't get too cocky...", "No wait, do.", "Chicks dig that..."},
+            wq_6 = {"You're turning out", "to be a regular", "sex machine..."},
+            wq_7 = {"About time!","I gotta say I wasn't sure", "if you were gonna' pull it off..."},
+            lq_1 = {"Fuuuck this shit!", "Let's go play Huniepop", "instead..."},
+            lq_2 = {"The objective is to win", "we're clear on that,", "right?"},
+            lq_3 = {"Realy?", "I know I taught you", "better than that"},
+            lq_4 = {"Could you please","suck more at poker?","That would be great.","Thaaanks."},
+            lq_5 = {"Could you please", "just not, like", "ever again?", "Yeah, thanks."},
+            lq_6 = {"It's too late in", "the game for you", "to be pulling this shit."},
+            lq_7 = {"Looks like the","joke's on us!"},
+            lq_8 = {"You hanging","in there pal?"},
+            lq_9 = {"I'm literally", "a fool, what's", "your excuse?"},
+            lq_10 = {"What a jip!"},
+            dq_1 = {"Damn! I hope you","have a few tricks","up your sleeve for","this final date!"}
+        },
+        tutorial = {
+            sb_1 = {
+                "Hey there! My name is",
+                "{C:attention}Kyu{}, I'm here to help",
+                "you learn how to play!"
+            },
+            sb_2 = {
+                "Your goal is to earn",
+                "enough {C:blue}Affection{} to complete",
+                "the {C:attention}Date"
+            },
+            sb_3 = {
+                "This here is a {C:blue}First Date{},",
+                "you only need to score",
+                "{C:attention}300 Affection{} to beat it."
+            },
+            sb_4 = {
+                "Select the {C:blue}First Date",
+                "to start the round!"
+            },
+            bb_1 = {
+                "Selecting the {C:attention}Second Date",
+                "will earn some hunie"
+            },
+            bb_2 = {
+                "Or choose to {C:attention}skip it",
+                "to get a {C:attention}Tag{}! Each",
+                "{C:attention}Tag{} has a unique effect"
+            },
+            bb_3 = {
+                "But keep an eye on",
+                "the {C:attention}Boss Date{}. It",
+                "has an ability you'll",
+                "need to plan around."
+            },
+            bb_4 = {
+                "if you beat it, then the",
+                "{C:attention}Ante{} goes up and all",
+                "{C:attention}Dates{} become harder"
+            },
+            bb_5 = {
+                "Beat {C:attention}Ante{} #1# to win.",
+                "Now choose your path!"
+            },
+            fh_1 = {
+                "You earn affection by",
+                "playing {C:attention}Poker hands"
+            },
+            fh_2 = {
+                "Each {C:attention}Poker hand{} earns a",
+                "base amount of {C:blue}Affection",
+                "multiplied by some {C:red}Passion"
+            },
+            fh_3 = {
+                "See your {C:attention}Poker hands",
+                "in the {C:attention}Run Info{} area,",
+                "along with other info",
+                "about your current run"
+            },
+            fh_4 = {
+                "Cards also earn",
+                "you some {C:blue}Affection{},",
+                "hover over to see!"
+            },
+            fh_5 = {
+                "Now select up to",
+                "{C:attention}5{} cards to play",
+                "and press {C:blue}'Play Hand'"
+            },
+            fh_6 = {
+                "You can also {C:red}'Discard'{} up",
+                "to {C:attention}5{} selected cards",
+                "to try and make even",
+                "stronger hands. Try it!"
+            },
+            fh_7 = {
+                "Careful! You only have a",
+                "limited number of {C:blue}Hands",
+                "and {C:red}Discards{} per round"
+            },
+            fh_8 = {
+                "Earn {C:attention}300 Affection{} before",
+                "you run out of {C:blue}Hands",
+                "to win this round.",
+                "Good luck!"
+            },
+            sh_1 = {
+                "When you get more cards,",
+                "remember you can rearrange",
+                "them. {C:attention}Jokers{} trigger in",
+                "order from left to right"
+            },
+            sh_2 = {
+                "And make sure that you",
+                "{C:attention}USE{} your consumables!"
+            },
+            sh_3 = {
+                "Select up to {C:attention}2{} cards",
+                "in your hand and press",
+                "{C:attention}'USE'{} on the {C:tarot}Tarot{} card",
+                "to enhance them!"
+            },
+            s_1 = {
+                "Niccee! Now that",
+                "you're {E:1}flush{} with {C:money}Hunie{},",
+                "you can buy some new",
+                "cards from the {C:attention}Shop"
+            },
+            s_2 = {
+                "Try buying this",
+                "hot bitty"
+            },
+            s_3 = {
+                "This is one of the {C:attention}#1#",
+                "{C:attention}Jokers{} you can add to",
+                "your run. Every {C:attention}Joker",
+                "does something different"
+            },
+            s_4 = {
+                "This one adds {C:red}+4 Passion{} to",
+                "every hand you play!"
+            },
+            s_5 = {
+                "Be picky, you can only",
+                "carry {C:attention}5 Joker{} cards",
+                "at a time"
+            },
+            s_6 = {
+                "Now buy the other",
+                "card from the {C:attention}Shop"
+            },
+            s_7 = {
+                "This {C:tarot}Tarot{} card is a",
+                "{C:attention}consumable{}. This one will",
+                "enhance your playing",
+                "cards! Hold on to it."
+            },
+            s_8 = {
+                "You can carry up to",
+                "{C:attention}2 consumable{} cards",
+                "with you at a time"
+            },
+            s_9 = {
+                "If you save up enough,",
+                "you can buy a {C:attention}Voucher{}.",
+                "{C:attention}Vouchers{} passively",
+                "upgrade your run!"
+            },
+            s_10 = {
+                "{C:attention}Vouchers{} are restocked",
+                "after you defeat the",
+                "{C:attention}Boss Date{}."
+            },
+            s_11 = {
+                "And check out both of",
+                "the {C:booster}Booster Packs{} in",
+                "every shop. They're",
+                "full of goodies!"
+            },
+            s_12 = {
+                "Let's move on to",
+                "the {C:attention}next round{}."
+            }
+        },
+		hunatroConfig = {
+            textures = "Textures",
+			joker = "Jokers",
+			blind = "Blind Chips",
+			suit = "Suits",
+			voucher = "Vouchers",
+			tarot = "Tarot Cards",
+			planet = "Planet Cards",
+			spectral = "Spectral Cards",
+			enhancer = "Card Enhancements",
+			seal = "Seals",
+			title = "Title Logo",
+
+            localization = "Localization",
+            cardNames = "Card Names",
+            blindNames = "Blind Names",
+            resourceNames = "Rename resources to HuniePop themed ones",
+            suitsToAffectionTypes = "Rename Suits to Affection types",
+
+            voice = "Kyu Voice",
+
+			warning = {
+				"*Balatro will need to be restarted",
+				"for changes to take effect"
+			},
+		}
+	}
+}
