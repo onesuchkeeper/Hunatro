@@ -1,0 +1,12 @@
+[manifest]
+version = "1.0.0"
+dump_lua = true
+priority = 0
+
+[[patches]]
+[patches.pattern]
+target = "card_character.lua"
+pattern =  "play_sound('voice'..math.random(1, 11), G.SPEEDFACTOR*(math.random()*0.2+1), 0.5)"
+position = "at"
+payload = "play_sound('voice'..math.random(1, 11), 1.0, 0.5)"
+match_indent = true
