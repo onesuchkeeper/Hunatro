@@ -6,8 +6,8 @@ end
 
 --inserts b into a with b taking priority
 function DeepMerge(tableA, tableB)
-	if tableA == nil then return tableB end
-	if tableB == nil then return tableA end
+	if not tableA then return tableB end
+	if not tableB then return tableA end
 
 	for key,value in pairs(tableB) do
 		if tableA[key] and type(tableA[key]) == 'table' then
@@ -480,12 +480,42 @@ SMODS.DeckSkin{
 	}
 }
 
-local isMalverk = TexturePack and AltTexture
+local function replaceHelp(input, inStr, outStr)
+	-- protect
+	local protected_tags = {}
+	local tag_counter = 0
+
+	local temp = input:gsub("{[^}]*}", function(tag)
+		tag_counter = tag_counter + 1
+		protected_tags[tag_counter] = tag
+		return "__TAG_" .. tag_counter .. "__"
+	end)
+
+	-- replace
+	temp = temp:gsub(inStr, outStr)
+
+	-- restore
+	temp = temp:gsub("__TAG_(%d+)__", function(id)
+		return protected_tags[tonumber(id)]
+	end)
+
+	return temp
+end
+
+local function replaceDict(dict, replace_table)
+	for key,_ in pairs(dict) do
+		for _,replace in ipairs(replace_table) do
+			dict[key] = replaceHelp(dict[key],replace[1], replace[2])
+		end
+	end
+end
 
 local function LoadLocalization()
 	local path = 'Mods/Hunatro/hunatro_localization/'.. G.LANG.key .. '.lua'
 
 	if love.filesystem.exists(path) then
+		Hunatro:debugMessage("Loading Localization")
+	
 		local loc = assert(loadstring(love.filesystem.read(path)))()
 
 		if not Hunatro.config.localization.blindNames then
@@ -505,7 +535,57 @@ local function LoadLocalization()
 
 		DeepMerge(G.localization, loc)
 	end
+	
+	--replacePairs
+	local replacePairs = {}
+	
+	local index = 0
+	
+	if G.localization.misc.replaceSuits then
+		for i = 1, #G.localization.misc.replaceSuits do
+			replacePairs[i] = G.localization.misc.replaceSuits[i]
+		end
+		
+		index = #G.localization.misc.replaceSuits
+	end
+	
+	if G.localization.misc.replaceResources then
+		for i = 1, #G.localization.misc.replaceResources do
+			replacePairs[index + i] = G.localization.misc.replaceResources[i]
+		end
+	end
+	
+	Hunatro:debugMessage("Processing replace pairs")
+	
+	for _,b in ipairs(replacePairs) do
+		Hunatro:debugMessage(b[1] .. " -> " .. b[2])
+	end
+	
+	for _, valueD in pairs(G.localization.descriptions) do
+		if type(valueD) == 'table' then
+			for _, value in pairs(valueD) do
+				for _,replace in ipairs(replacePairs) do
+				
+					if value.name then
+						value.name = replaceHelp(value.name, replace[1], replace[2])
+					end
+					
+					if value and type(value.text) == 'table' then
+						for j = 1, #value.text do
+							value.text[j] = replaceHelp(value.text[j], replace[1], replace[2])
+						end
+					end
+				end
+			end
+		end
+	end
+
+	replaceDict(G.localization.misc.suits_singular, replacePairs)
+	replaceDict(G.localization.misc.suits_plural, replacePairs)
+	replaceDict(G.localization.misc.achievement_descriptions, replacePairs)
 end
+
+local isMalverk = TexturePack and AltTexture
 	
 --other textures
 if isMalverk then
@@ -855,51 +935,7 @@ if isMalverk then
 		},
 		localization = Hunatro.config.localization.cardNames,
 	})
-else
-	local game_table = {
-		Tag = 'P_TAGS',
-		Seal = 'shared_seals',
-		Blind = 'P_BLINDS',
-		Stake = 'P_STAKES',
-		Sticker = 'shared_stickers'
-	}
-
-	local loc_table = {
-		Booster = 'Other',
-		Seal = 'Other',
-		Sticker = 'Other'
-	}
-
-	local function replaceHelp(input, inStr, outStr)
-		-- protect
-		local protected_tags = {}
-		local tag_counter = 0
-	
-		local temp = input:gsub("{[^}]*}", function(tag)
-			tag_counter = tag_counter + 1
-			protected_tags[tag_counter] = tag
-			return "__TAG_" .. tag_counter .. "__"
-		end)
-	
-		-- replace
-		temp = temp:gsub(inStr, outStr)
-	
-		-- restore
-		temp = temp:gsub("__TAG_(%d+)__", function(id)
-			return protected_tags[tonumber(id)]
-		end)
-	
-		return temp
-	end
-
-	local function replaceDict(dict, replace_table)
-		for key,_ in pairs(dict) do
-			for _,replace in ipairs(replace_table) do
-				dict[key] = replaceHelp(dict[key],replace[1], replace[2])
-			end
-		end
-	end
-
+else	
 	Hunatro.process_loc_text = function()
 		LoadLocalization()
 
@@ -939,30 +975,6 @@ else
 					G[game_table][center].set_card_type_badge = new_loc.badge and nil or (G[game_table][center].default_card_type_badge ~= '1' and G[game_table][center].default_card_type_badge or false)
 				end
 			end
-		end
-
-		--replacePairs
-		local replacePairs = DeepMerge(G.localization.misc.replaceSuits, G.localization.misc.replaceResources)
-		if replacePairs then
-			for _, valueD in pairs(G.localization.descriptions) do
-				if type(valueD) == 'table' then
-					for _, value in pairs(valueD) do
-						if value and type(value.text) == 'table' then
-							for j,_ in ipairs(value.text) do
-								if value.text[j] then
-									for _,replace in ipairs(replacePairs) do
-										value.text[j] = replaceHelp(value.text[j],replace[1], replace[2])
-									end
-								end
-							end
-						end
-					end
-				end
-			end
-
-			replaceDict(G.localization.misc.suits_singular, replacePairs)
-			replaceDict(G.localization.misc.suits_plural, replacePairs)
-			replaceDict(G.localization.misc.achievement_descriptions, replacePairs)
 		end
 	end
 

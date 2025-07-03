@@ -472,7 +472,7 @@
             wq_5 = {"Alright you're getting good!","just don't get too cocky...", "No wait, do.", "Chicks dig that..."},
             wq_6 = {"You're turning out", "to be a regular", "sex machine..."},
             wq_7 = {"About time!","I gotta say I wasn't sure", "if you were gonna' pull it off..."},
-            lq_1 = {"Fuuuck this shit!", "Let's go play Huniepop", "instead..."},
+            lq_1 = {"Fuuuck this shit!", "Let's go play HuniePop", "instead..."},
             lq_2 = {"The objective is to win", "we're clear on that,", "right?"},
             lq_3 = {"Realy?", "I know I taught you", "better than that"},
             lq_4 = {"Could you please","suck more at poker?","That would be great.","Thaaanks."},
@@ -490,162 +490,9 @@
                 "{C:attention}Kyu{}, I'm here to help",
                 "you learn how to play!"
             },
-            sb_2 = {
-                "Your goal is to earn",
-                "enough {C:blue}Affection{} to complete",
-                "the {C:attention}Date"
-            },
-            sb_3 = {
-                "This here is a {C:blue}First Date{},",
-                "you only need to score",
-                "{C:attention}300 Affection{} to beat it."
-            },
-            sb_4 = {
-                "Select the {C:blue}First Date",
-                "to start the round!"
-            },
-            bb_1 = {
-                "Selecting the {C:attention}Second Date",
-                "will earn some hunie"
-            },
-            bb_2 = {
-                "Or choose to {C:attention}skip it",
-                "to get a {C:attention}Tag{}! Each",
-                "{C:attention}Tag{} has a unique effect"
-            },
-            bb_3 = {
-                "But keep an eye on",
-                "the {C:attention}Boss Date{}. It",
-                "has an ability you'll",
-                "need to plan around."
-            },
-            bb_4 = {
-                "if you beat it, then the",
-                "{C:attention}Ante{} goes up and all",
-                "{C:attention}Dates{} become harder"
-            },
-            bb_5 = {
-                "Beat {C:attention}Ante{} #1# to win.",
-                "Now choose your path!"
-            },
-            fh_1 = {
-                "You earn affection by",
-                "playing {C:attention}Poker hands"
-            },
-            fh_2 = {
-                "Each {C:attention}Poker hand{} earns a",
-                "base amount of {C:blue}Affection",
-                "multiplied by some {C:red}Passion"
-            },
-            fh_3 = {
-                "See your {C:attention}Poker hands",
-                "in the {C:attention}Run Info{} area,",
-                "along with other info",
-                "about your current run"
-            },
-            fh_4 = {
-                "Cards also earn",
-                "you some {C:blue}Affection{},",
-                "hover over to see!"
-            },
-            fh_5 = {
-                "Now select up to",
-                "{C:attention}5{} cards to play",
-                "and press {C:blue}'Play Hand'"
-            },
-            fh_6 = {
-                "You can also {C:red}'Discard'{} up",
-                "to {C:attention}5{} selected cards",
-                "to try and make even",
-                "stronger hands. Try it!"
-            },
-            fh_7 = {
-                "Careful! You only have a",
-                "limited number of {C:blue}Hands",
-                "and {C:red}Discards{} per round"
-            },
-            fh_8 = {
-                "Earn {C:attention}300 Affection{} before",
-                "you run out of {C:blue}Hands",
-                "to win this round.",
-                "Good luck!"
-            },
-            sh_1 = {
-                "When you get more cards,",
-                "remember you can rearrange",
-                "them. {C:attention}Jokers{} trigger in",
-                "order from left to right"
-            },
-            sh_2 = {
-                "And make sure that you",
-                "{C:attention}USE{} your consumables!"
-            },
-            sh_3 = {
-                "Select up to {C:attention}2{} cards",
-                "in your hand and press",
-                "{C:attention}'USE'{} on the {C:tarot}Tarot{} card",
-                "to enhance them!"
-            },
-            s_1 = {
-                "Niccee! Now that",
-                "you're {E:1}flush{} with {C:money}Hunie{},",
-                "you can buy some new",
-                "cards from the {C:attention}Shop"
-            },
             s_2 = {
                 "Try buying this",
                 "hot bitty"
-            },
-            s_3 = {
-                "This is one of the {C:attention}#1#",
-                "{C:attention}Jokers{} you can add to",
-                "your run. Every {C:attention}Joker",
-                "does something different"
-            },
-            s_4 = {
-                "This one adds {C:red}+4 Passion{} to",
-                "every hand you play!"
-            },
-            s_5 = {
-                "Be picky, you can only",
-                "carry {C:attention}5 Joker{} cards",
-                "at a time"
-            },
-            s_6 = {
-                "Now buy the other",
-                "card from the {C:attention}Shop"
-            },
-            s_7 = {
-                "This {C:tarot}Tarot{} card is a",
-                "{C:attention}consumable{}. This one will",
-                "enhance your playing",
-                "cards! Hold on to it."
-            },
-            s_8 = {
-                "You can carry up to",
-                "{C:attention}2 consumable{} cards",
-                "with you at a time"
-            },
-            s_9 = {
-                "If you save up enough,",
-                "you can buy a {C:attention}Voucher{}.",
-                "{C:attention}Vouchers{} passively",
-                "upgrade your run!"
-            },
-            s_10 = {
-                "{C:attention}Vouchers{} are restocked",
-                "after you defeat the",
-                "{C:attention}Boss Date{}."
-            },
-            s_11 = {
-                "And check out both of",
-                "the {C:booster}Booster Packs{} in",
-                "every shop. They're",
-                "full of goodies!"
-            },
-            s_12 = {
-                "Let's move on to",
-                "the {C:attention}next round{}."
             }
         },
 		hunatroConfig = {
