@@ -227,6 +227,12 @@
                     j_perkeo = {
                         name = 'Just Good Business'
                     },
+					j_shoot_the_moon = {
+                        name = 'Air Freshener'
+                    },
+					j_dna = {
+                        name = 'Tattoo'
+                    },
                     c_planet_x = {
                         name = "Tendricide",
                     },
